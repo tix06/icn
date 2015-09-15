@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <title>
+Dessiner dans une page web
+  </title>
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/tipuedrop/tipuedrop.css">
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/highlight-ipynb.css" />
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/pygments.css" />
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/style.css" />
+
+  <!-- Favicons from realfavicongenerator.net -->
+  <link rel="apple-touch-icon-precomposed" href="http://benjaminabel.github.io/icn//favicon-152.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="http://benjaminabel.github.io/icn//apple-touch-icon-57x57.png?v=1">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://benjaminabel.github.io/icn//apple-touch-icon-60x60.png?v=1">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://benjaminabel.github.io/icn//apple-touch-icon-72x72.png?v=1">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://benjaminabel.github.io/icn//apple-touch-icon-76x76.png?v=1">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://benjaminabel.github.io/icn//apple-touch-icon-114x114.png?v=1">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://benjaminabel.github.io/icn//apple-touch-icon-120x120.png?v=1">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://benjaminabel.github.io/icn//apple-touch-icon-144x144.png?v=1">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://benjaminabel.github.io/icn//apple-touch-icon-152x152.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://benjaminabel.github.io/icn//apple-touch-icon-180x180.png?v=1">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-32x32.png?v=1" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-194x194.png?v=1" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-96x96.png?v=1" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//android-chrome-192x192.png?v=1" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-16x16.png?v=1" sizes="16x16">
+  <link rel="manifest" href="http://benjaminabel.github.io/icn//manifest.json?v=1">
+  <link rel="shortcut icon" href="http://benjaminabel.github.io/icn//favicon.ico?v=1">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="http://benjaminabel.github.io/icn//mstile-144x144.png?v=1">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="http://benjaminabel.github.io/icn">
+                        ICN
+                    </a>
+        </h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon">
+        <a href="#">
+          <span>Menu</span>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li>
+          <a href="https://github.com/benjaminabel/icn" class="active">
+                        Github
+                    </a>
+        </li>
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="small-12 columns">
+              <input type="text" name="q" id="tipue_drop_input" autocomplete="off" required placeholder="Rechercher">
+            </div>
+            <div id="tipue_drop_content"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>  <!-- End Nav -->
+
+  <!-- Main Blog Content -->
+  <div class="row " id="main-content">
+<article>
+  <header>
+    <div class="row" id="chapter-title">
+      <h2>
+        Créer des pages web en html5
+      </h2>
+
+      <dl class="sub-nav">
+        <dt>Navigation:</dt>
+        <dd >
+          <a href='http://benjaminabel.github.io/icn/html/structure-dun-document-html/'>
+                  Structure d'un document html
+                </a>
+        </dd>
+        <dd >
+          <a href='http://benjaminabel.github.io/icn/html/ajouter-du-style-avec-css/'>
+                  Ajouter du style avec css
+                </a>
+        </dd>
+        <dd >
+          <a href='http://benjaminabel.github.io/icn/html/ajouter-du-dynamisme-avec-javascript/'>
+                  Ajouter du dynamisme avec javascript
+                </a>
+        </dd>
+        <dd class="active" >
+          <a href='http://benjaminabel.github.io/icn/html/dessiner-dans-une-page-web/'>
+                  Dessiner dans une page web
+                </a>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="row">
+      <div id="article-title" class="large-8 columns">
+        <h2>
+          <a href="http://benjaminabel.github.io/icn/html/dessiner-dans-une-page-web/" rel="bookmark" title="Permalink to Dessiner dans une page web">
+                        Dessiner dans une page web
+                    </a>
+        </h2>
+      </div>
+      <div id="toc" class="large-4 columns">
+      </div>
+    </div>
+  </header>
+<h6 class="subheader" title="2014-11-04T00:00:00+01:00">
+    mar. 04 novembre 2014
+</h6>
+ <p>Il existe deux grands types de formats d'images:</p>
+<ul>
+<li>les images matricielles,</li>
+<li>et les images vectorielles.</li>
+</ul>
+<p>Ces deux types d'images peuvent être intégrées dans une page web grâce à la balise <code>&lt;img&gt;</code>, mais elles peuvent être aussi codées directement dans la page grâce aux balises <code>&lt;svg&gt;</code> et <code>&lt;canvas&gt;</code>.</p>
+<h1 id="dessin-vectoriel-en-svg">Dessin vectoriel en <code>svg</code></h1>
+<p><a title="W3C [CC-BY-2.5 (http://creativecommons.org/licenses/by/2.5)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3ASVG_Logo.svg"><img width="256" alt="SVG Logo" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/256px-SVG_Logo.svg.png"/></a></p>
+<p>Le format svg est un format d'image vectoriel proposé par le W3C.</p>
+<p>Dans ce format, les dessins sont décrits par un ensemble formes géométriques simples (arcs de cercle ou d'ellipse, segments de droite, courbes de Bézier...)</p>
+<h2 id="syntaxe">Syntaxe</h2>
+<p>Le fichier svg est un fichier xml qui indique les formes présentes dans le dessin(<code>rect</code> pour rectangle, <code>circle</code> pour cercle,...)</p>
+<p><strong>Exemple:</strong></p>
+<p>Créer un fichier texte appelé <code>image.svg</code> avec le contenu suivant.</p>
+<div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; standalone=&quot;no&quot;?&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;250&quot;</span> <span class="na">version=</span><span class="s">&quot;1.1&quot;</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span> <span class="na">width=</span><span class="s">&quot;30&quot;</span> <span class="na">height=</span><span class="s">&quot;30&quot;</span> <span class="na">stroke=</span><span class="s">&quot;black&quot;</span> <span class="na">fill=</span><span class="s">&quot;transparent&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;60&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span> <span class="na">rx=</span><span class="s">&quot;10&quot;</span> <span class="na">ry=</span><span class="s">&quot;10&quot;</span> <span class="na">width=</span><span class="s">&quot;30&quot;</span> <span class="na">height=</span><span class="s">&quot;30&quot;</span> <span class="na">stroke=</span><span class="s">&quot;black&quot;</span> <span class="na">fill=</span><span class="s">&quot;transparent&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;circle</span> <span class="na">cx=</span><span class="s">&quot;25&quot;</span> <span class="na">cy=</span><span class="s">&quot;75&quot;</span> <span class="na">r=</span><span class="s">&quot;20&quot;</span> <span class="na">stroke=</span><span class="s">&quot;red&quot;</span> <span class="na">fill=</span><span class="s">&quot;transparent&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;ellipse</span> <span class="na">cx=</span><span class="s">&quot;75&quot;</span> <span class="na">cy=</span><span class="s">&quot;75&quot;</span> <span class="na">rx=</span><span class="s">&quot;20&quot;</span> <span class="na">ry=</span><span class="s">&quot;5&quot;</span> <span class="na">stroke=</span><span class="s">&quot;red&quot;</span> <span class="na">fill=</span><span class="s">&quot;transparent&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;line</span> <span class="na">x1=</span><span class="s">&quot;10&quot;</span> <span class="na">x2=</span><span class="s">&quot;50&quot;</span> <span class="na">y1=</span><span class="s">&quot;110&quot;</span> <span class="na">y2=</span><span class="s">&quot;150&quot;</span> <span class="na">stroke=</span><span class="s">&quot;orange&quot;</span> <span class="na">fill=</span><span class="s">&quot;transparent&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;polyline</span> <span class="na">points=</span><span class="s">&quot;60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145&quot;</span>
+      <span class="na">stroke=</span><span class="s">&quot;orange&quot;</span> <span class="na">fill=</span><span class="s">&quot;transparent&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;polygon</span> <span class="na">points=</span><span class="s">&quot;50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180&quot;</span>
+      <span class="na">stroke=</span><span class="s">&quot;green&quot;</span> <span class="na">fill=</span><span class="s">&quot;transparent&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">&quot;M20,230 Q40,205 50,230 T90,230&quot;</span> <span class="na">fill=</span><span class="s">&quot;none&quot;</span> <span class="na">stroke=</span><span class="s">&quot;blue&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;5&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p>Lorsque vous ouvrez ce fichier avec une visionneuse d'images, vous devriez obtenir l'image suivante:</p>
+<div style='background-color: lightgray;'>
+<svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
+
+  <circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/>
+  <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/>
+
+  <line x1="10" x2="50" y1="110" y2="150" stroke="orange" fill="transparent" stroke-width="5"/>
+  <polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+      stroke="orange" fill="transparent" stroke-width="5"/>
+
+  <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+      stroke="green" fill="transparent" stroke-width="5"/>
+
+  <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+</svg>
+</div>
+
+<p>Essayez modifier certains des paramètres du fichier svg pour vous familiariser avec sa syntaxe, vous pourrez parfaire votre connaissance en utilisant cette page du <a href="https://developer.mozilla.org/fr/docs/Web/SVG/Tutoriel/Formes_de_base">Tutoriel sur MDN</a></p>
+<h2 id="integration">Intégration</h2>
+<p>Il peut être intégré à des pages web soit:</p>
+<ol>
+<li>En appelant un fichier <code>svg</code> externe grâce à la balise <code>&lt;img&gt;</code></li>
+</ol>
+<div class="highlight"><pre>&lt;img src=&quot;image.svg&quot;&gt;
+</pre></div>
+
+
+<ol>
+<li>Soit en intégrant directement le code <code>svg</code> dans le code <code>html</code> de la page grâce à la baise <code>&lt;svg&gt;</code></li>
+</ol>
+<div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+
+    <span class="nt">&lt;h1&gt;</span>Un dessin vectoriel en svg<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;200&quot;</span> <span class="na">style=</span><span class="s">&quot;background-color: lightgray;&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;circle</span> <span class="na">cx=</span><span class="s">&quot;50%&quot;</span> <span class="na">cy=</span><span class="s">&quot;50%&quot;</span> <span class="na">r=</span><span class="s">&quot;40%&quot;</span> <span class="na">stroke=</span><span class="s">&quot;green&quot;</span> <span class="na">stroke-width=</span><span class="s">&quot;3%&quot;</span> <span class="na">fill=</span><span class="s">&quot;yellow&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/svg&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p><strong>RENDU:</strong></p>
+<p><svg width="200" height="200" style="background-color: lightgray;">
+<circle cx="50%" cy="50%" r="40%" stroke="green" stroke-width="3%" fill="yellow" />
+</svg></p>
+<h1 id="dessin-matriciel-dans-le-canvas">Dessin matriciel dans le <code>canvas</code></h1>
+<p>La balise <code>&lt;canvas&gt;</code> qui fait partie de la spécification <strong>HTML5</strong> du <em>W3C</em> permet d'effectuer des rendus dynamiques d'images bitmap dans le navigateur grâce à des scripts <code>javascript</code>.</p>
+<p>Pour utiliser les zones de dessin canvas, on ajoute un élément <code>&lt;canvas&gt;</code> vide dans le corps du document avec un id afin de pouvoir le modifier à partir du javascript.</p>
+<h2 id="code-html">Code <code>html</code></h2>
+<div class="highlight"><pre><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;monCanvas&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>
+    Votre navigateur ne  supporte pas la balise HTML5 Canvas.
+<span class="nt">&lt;/canvas&gt;</span>
+</pre></div>
+
+
+<p><em>Le texte présent dans l'élément canvas n'est affiché que si le navigateur ne connait pas cette balise.</em></p>
+<h2 id="code-javascript">Code <code>javascript</code></h2>
+<p>Nous allons maintenant dessiner dans ce <code>canvas</code> grâce à un script javascript qu'on intégrera comme n'importe quel code javascript(voir <a href="http://benjaminabel.github.io/icn/html/ajouter-du-dynamisme-avec-javascript/">Ajouter du dynamisme avec javascript</a>)</p>
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">theCanvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;monCanvas&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">theCanvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">drawScreen</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//background</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">&quot;#ffffaa&quot;</span><span class="p">;</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">300</span><span class="p">);</span>
+
+    <span class="c1">//text</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">&quot;#333333&quot;</span><span class="p">;</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">font</span> <span class="o">=</span> <span class="s2">&quot;20px Sans-Serif&quot;</span><span class="p">;</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">textBaseline</span> <span class="o">=</span> <span class="s2">&quot;top&quot;</span><span class="p">;</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">fillText</span><span class="p">(</span><span class="s2">&quot;Bienvenue dan sle monde du canvas&quot;</span><span class="p">,</span> <span class="mi">195</span><span class="p">,</span> <span class="mi">80</span><span class="p">);</span>
+
+    <span class="c1">//box</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;#000000&quot;</span><span class="p">;</span>
+    <span class="nx">context</span><span class="p">.</span><span class="nx">strokeRect</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">490</span><span class="p">,</span> <span class="mi">290</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="nx">drawScreen</span><span class="p">();</span>
+</pre></div>
+
+
+<p>Voici le code html complet:</p>
+<div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Dessin en canvas<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+            window.onload = function() {
+
+                var theCanvas = document.getElementById(&quot;monCanvas&quot;);
+                var ctx = theCanvas.getContext(&quot;2d&quot;);
+
+                function drawScreen() {
+                    //background
+                    ctx.fillStyle = &quot;#ffffaa&quot;;
+                    ctx.fillRect(0, 0, 500, 400);
+
+                    //text
+                    ctx.fillStyle = &quot;#333333&quot;;
+                    ctx.font = &quot;18px Sans-Serif&quot;;
+                    ctx.textBaseline = &quot;top&quot;;
+                    ctx.fillText(&quot;Bienvenue dans le monde du canvas&quot;, 95, 110);
+                    //box
+                    ctx.strokeStyle = &quot;#000000&quot;;
+                    ctx.strokeRect(5, 5, 490, 390);
+
+                    //smiley
+                    ctx.beginPath();
+                    ctx.arc(250, 200, 50, 0, Math.PI * 2, true); // Tête
+                    ctx.fillStyle = &quot;#FFFF00&quot;;
+                    ctx.fill(); // Colorier la tête en jaune
+                    ctx.moveTo(285, 200);
+                    ctx.arc(250, 200, 35, 0, Math.PI, false); // Bouche
+                    ctx.moveTo(240, 190);
+                    ctx.arc(235, 190, 5, 0, Math.PI * 2, true); // Oeil gauche
+                    ctx.moveTo(270, 190);
+                    ctx.arc(265, 190, 5, 0, Math.PI * 2, true); // Oeil droit
+
+                    ctx.lineWidth = 5;
+                    ctx.stroke();
+
+                }
+
+                drawScreen();
+
+            }
+        <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+
+    <span class="nt">&lt;body&gt;</span>
+
+        <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;monCanvas&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>
+            Votre navigateur ne supporte pas la balise HTML5 Canvas.
+        <span class="nt">&lt;/canvas&gt;</span>
+
+    <span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p><strong>RENDU</strong>
+<img title="Rendu de l'élément canvas" src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png" class="center" alt="Rendu de l'élément canvas"></p>
+<p>Essayez modifier certains des paramètres du code pour vous familiariser avec sa syntaxe, puis ajouter des éléments en utilisant cette page de référence de <a href="http://www.w3schools.com/tags/ref_canvas.asp">w3schools</a></p>
+<h2 id="creer-des-animations">Créer des animations</h2>
+<p>Pou animer un dessin canvas, nous allons utiliser la méthode <code>window.requestAnimationFrame()</code>, cette méthode permet d'éxecuter une fonction à chaque affichage de la fenêtre du navigateur(soit environ 60 images/seconde).</p>
+<p>On crée ainsi une fonction <code>anime()</code> qui s'appelle elle-même à chaque rafraichissement de l'affichage.</p>
+<div class="highlight"><pre><span class="c1">// Création de la fonction</span>
+<span class="kd">function</span> <span class="nx">anime</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">anime</span><span class="p">);</span>
+    <span class="c1">// Commandes de dessin</span>
+<span class="p">}</span>
+
+<span class="c1">// Appel de la fonction pour lancer l&#39;animation</span>
+<span class="nx">anime</span><span class="p">();</span>
+</pre></div>
+
+
+<p>Ensuite pour que l'affichage soit différent à chaque rafraichissement il faut que les commandes dessin utilisent des variables de coordonnées.</p>
+<h3 id="creer-un-monstre-anime">Créer un monstre animé</h3>
+<p>Utiliser le lien suivant pour voir comment créer un dessin animé en utilisant des coordonnées aléatoires.</p>
+<p><a href="http://jsbin.com/garagowe/14/edit">http://jsbin.com/garagowe/14/edit</a></p>
+<h3 id="deplacer-un-objet-et-detecter-les-bords-pour-quil-rebondisse">Déplacer un objet et détecter les bords pour qu'il rebondisse</h3>
+<p>Voici par exemple comment on peut dessiner le même smiley que tout à l'heure, mais à des coordonnées x et y, données en paramètres de la fonction. Grâce à cette fonction il suffira d'éxecuter <code>Smiley(60,70)</code> pour dessiner un smiley centré aux coordonnées <code>x = 60</code> et <code>y = 70</code>.</p>
+<div class="highlight"><pre><span class="kd">function</span> <span class="nx">Smiley</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">y</span><span class="p">;</span>
+
+    <span class="k">this</span><span class="p">.</span><span class="nx">dessineToi</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">//smiley</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span> <span class="c1">// Tête</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">&quot;#FFFF00&quot;</span><span class="p">;</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span> <span class="c1">// Colorier la tête en jaune</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">35</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span> <span class="c1">// Bouche</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">-</span> <span class="mi">10</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="mi">10</span><span class="p">);</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">-</span> <span class="mi">15</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span> <span class="c1">// Oeil gauche</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="mi">10</span><span class="p">);</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">15</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span> <span class="c1">// Oeil droit</span>
+
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+    <span class="p">};</span>
+</pre></div>
+
+
+<p>On crée ensuite une méthode <code>deplaceToi</code> à l'objet  <code>Smiley</code>  qui ajoute <code>vx</code> à la coordonnée <code>x</code> et <code>vy</code> à la coordonnée <code>y</code> à chaque image.</p>
+<p>Puis une fonction <code>checkWallCollision()</code> qui vérifie que le smiley ne touche pas les bords de l'écran, et qui inverse une des composante de la vitesse lorsque le smiley touche une paroi horizontale ou verticale.</p>
+<h3 id="code-complet">Code complet</h3>
+<div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Dessin en canvas<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+            window.onload = function() {
+                // Variable qui correspond au canvas
+                var monCanvas = document.getElementById(&quot;monCanvas&quot;);
+                // Dimensions du canvas
+                var width = monCanvas.width;
+                var height = monCanvas.height;
+                // contexte graphique 2D
+                var ctx = monCanvas.getContext(&#39;2d&#39;);
+
+                // Inititialisation des coordonnées et vitesses du smiley
+                var smiley = new Smiley(width / 2, height / 2, (10 * Math.random()) - 5, (10 * Math.random()) - 5);
+
+                // Lancement de l&#39;animation
+                anime();
+
+                function anime() {
+                    // 1) On dessine le fond du canvas
+                    dessineFond();
+
+                    // 2) On déplace le smiley
+                    smiley.deplaceToi();
+
+                    // 3) On regarde si le smiley touche un mur
+                    checkWallCollision(smiley);
+
+                    // 3) On dessine le smiley
+                    smiley.dessineToi();
+
+                    // On demande une nouvelle frame d&#39;animation
+                    window.requestAnimationFrame(anime);
+                }
+
+                function dessineFond() {
+                    // On efface l&#39;écran
+                    ctx.clearRect(0, 0, monCanvas.width, monCanvas.height);
+
+                    //background
+                    ctx.fillStyle = &quot;#ffffcc&quot;;
+                    ctx.fillRect(0, 0, monCanvas.width, monCanvas.height);
+
+                    //box
+                    ctx.strokeStyle = &quot;#000000&quot;;
+                    ctx.strokeRect(5, 5, 490, 390);
+                }
+
+                // fonction smiley qui stocke ses coordonnées et sa vitesse
+                // et qui possède deux méthodes pour se dessiner et se déplacer
+
+                function Smiley(x, y, vx, vy) {
+                    this.x = x;
+                    this.y = y;
+                    this.vx = vx;
+                    this.vy = vy;
+                    this.radius = 50;
+
+                    this.dessineToi = function() {
+                        //smiley
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, 50, 0, Math.PI * 2, true); // Tête
+                        ctx.fillStyle = &quot;#FFFF00&quot;;
+                        ctx.fill(); // Colorier la tête en jaune
+                        ctx.moveTo(this.x + 35, this.y);
+                        ctx.arc(this.x, this.y, 35, 0, Math.PI, false); // Bouche
+                        ctx.moveTo(this.x - 10, this.y - 10);
+                        ctx.arc(this.x - 15, this.y - 10, 5, 0, Math.PI * 2, true); // Oeil gauche
+                        ctx.moveTo(this.x + 20, this.y - 10);
+                        ctx.arc(this.x + 15, this.y - 10, 5, 0, Math.PI * 2, true); // Oeil droit
+
+                        ctx.lineWidth = 5;
+                        ctx.stroke();
+                    };
+
+                    this.deplaceToi = function() {
+
+                        this.x += this.vx;
+                        this.y += this.vy;
+                    };
+                }
+
+                function checkWallCollision(objet) {
+                    if (objet.x <span class="nt">&lt; objet.radius</span><span class="err">)</span> <span class="err">{</span>
+                        <span class="na">objet.x =</span> <span class="s">objet.radius;</span>
+                        <span class="err">objet.vx</span> <span class="err">*=</span> <span class="err">-1;</span>
+                    <span class="err">}</span>
+                    <span class="err">if</span> <span class="err">(objet.x</span> <span class="nt">&gt;</span> width - (objet.radius)) {
+                        objet.x = width - (objet.radius);
+                        objet.vx *= -1;
+                    }
+                    if (objet.y <span class="nt">&lt; objet.radius</span><span class="err">)</span> <span class="err">{</span>
+                        <span class="na">objet.y =</span> <span class="s">objet.radius;</span>
+                        <span class="err">objet.vy</span> <span class="err">*=</span> <span class="err">-1;</span>
+                    <span class="err">}</span>
+                    <span class="err">if</span> <span class="err">(objet.y</span> <span class="nt">&gt;</span> height - (objet.radius)) {
+                        objet.y = height - (objet.radius);
+                        objet.vy *= -1;
+                    }
+                }
+
+
+            }
+        <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+
+    <span class="nt">&lt;body&gt;</span>
+
+        <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;monCanvas&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>
+            Votre navigateur ne supporte pas la balise HTML5 Canvas.
+        <span class="nt">&lt;/canvas&gt;</span>
+
+    <span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p><strong>RENDU</strong>
+<em>Attention ce rendu est une vidéo de capture d'écran à 15 image par seconde, le rendu réél est beaucoup plus fluide et continu.</em></p>
+<p><video autoplay loop id="myVideo" src="http://benjaminabel.github.io/icn/images/HTML/smiley.webm" type="video/webm">
+    Votre navigateur ne supporte pas les vidéos.
+</video></p>
+<script type="text/javascript" charset="utf-8">
+// script permettant de tourner en boucle car loop marche pas
+var myVideo = document.getElementById('video');
+if (typeof myVideo.loop == 'boolean') { // loop supported
+    myVideo.loop = true;
+} else { // loop property not supported
+    myVideo.on('ended', function () {
+    this.currentTime = 0;
+    this.play();
+    }, false);
+}
+myVideo.play();
+</script> <p class="subheader">Catégorie: <a href="http://benjaminabel.github.io/icn/category/html.html">HTML</a>
+
+    Mots-clés:
+    <a href="http://benjaminabel.github.io/icn/tag/icn.html">icn </a>
+    <a href="http://benjaminabel.github.io/icn/tag/html5.html">html5 </a>
+    <a href="http://benjaminabel.github.io/icn/tag/canvas.html">canvas </a>
+    <a href="http://benjaminabel.github.io/icn/tag/svg.html">svg </a>
+</p>
+
+
+ </article>
+
+
+  </div>
+  <!-- End Main Content -->
+  <!-- Footer -->
+<div class="footer">
+  <div class="row">
+    <div class="large-3 columns">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Licence Creative Commons" src="http://benjaminabel.github.io/icn/theme/images/by-sa.svg" />
+      </a>
+    </div>
+    <div class="large-9 columns">
+      «Dessiner dans une page web» par Benjamin Abel est mis à disposition selon les termes de la
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.
+    </div>
+  </div>
+</div>  <!-- End footer -->
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/jquery/dist/jquery.js"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/foundation/js/foundation.js"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/tipuedrop/tipuedrop.js"></script>
+  <script>
+    $(document).foundation();
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+  </script>
+  <!-- Search bar -->
+  <script>
+    $(document).ready(function() {
+      $('#tipue_drop_input').tipuedrop({
+        'mode': 'json',
+        'contentLocation': 'http://benjaminabel.github.io/icn/tipuesearch_content.json'
+      });
+    });
+  </script>
+  <!-- End Search bar -->
+
+  <!-- Google analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-50631847-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google analytics -->
+  <script src="http://benjaminabel.github.io/icn/theme/js/mine.js"></script>
+</body>

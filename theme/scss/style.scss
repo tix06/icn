@@ -1,0 +1,252 @@
+@import "base";
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:700&subset=latin-ext);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Colors
+$anchor-color: #008cba;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-variant: small-caps;
+  color: $anchor-color;
+}
+
+// Cohésion des styles entre highlight-ipynb ?renderedhtml et markdown
+
+article {
+  h1 {
+    font-size: 185.7%;
+    margin: 1.08em 0;
+    font-weight: bold;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 157.1%;
+    margin: 1.27em 0;
+    font-weight: bold;
+    line-height: 1;
+  }
+  h3 {
+    font-size: 128.6%;
+    margin: 1.55em 0 0 0;
+    font-weight: bold;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 100%;
+    margin: 2em 0 0 0;
+    font-weight: bold;
+    line-height: 1;
+  }
+  h5 {
+    font-size: 100%;
+    margin: 2em 0 0 0;
+    font-weight: bold;
+    line-height: 1;
+    font-style: italic;
+  }
+  h6 {
+    font-size: 100%;
+    margin: 2em 0 0 0;
+    font-weight: bold;
+    line-height: 1;
+    font-style: italic;
+  }
+  h1:first-child {
+    margin-top: .538em;
+  }
+  h2:first-child {
+    margin-top: .636em;
+  }
+  h3:first-child {
+    margin-top: .777em;
+  }
+  h4:first-child {
+    margin-top: 1em;
+  }
+  h5:first-child {
+    margin-top: 1em;
+  }
+  h6:first-child {
+    margin-top: 1em;
+  }
+}
+
+header {
+  h1, h2, h3, a {
+    color: #333;
+  }
+}
+
+div#chapter-title {
+  background: #eee;
+  > h2 {
+    padding: 15px;
+  }
+  .sub-nav {
+    margin: 0;
+    padding: .25rem 0;
+    dt:first-child {
+      color: #333;
+      font-weight: bold;
+      font-family: 'Ubuntu', sans-serif;
+      font-variant: small-caps;
+    }
+  }
+}
+
+div#article-title {
+  padding-top: 2em;
+}
+
+// table of contents de l'article
+
+#toc {
+  background: #eee;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  padding: 2em;
+  margin: 0em;
+}
+
+#toc {
+  a {
+    color: #999;
+  }
+  a:hover {
+    color: #737373;
+  }
+}
+
+h1:target {
+  animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+  from {
+    background: yellow;
+  }
+  to {
+    background: white;
+  }
+}
+
+
+// Images centrees avec la classe center
+
+img.center {
+  display: block;
+  margin: 15px auto;
+}
+
+img.full {
+  height: auto;
+  width: 90%;
+}
+
+img.half {
+  height: auto;
+  width: 50%;
+}
+
+img.right {
+  float: right;
+}
+
+img.left {
+  float: left;
+}
+
+
+// Définitions
+
+dl:not(header) {
+  background: #eee;
+  border-radius: .3em;
+  margin: 1em 0 0.7em 0;
+}
+
+dl:not(.sub-nav)::before {
+  content: 'Vocabulaire';
+  font: small-caps bolder 1.33em Open Sans, sans-serif;
+  line-height: 2em;
+}
+
+ol li ul,
+ol li ol {
+  margin-bottom: 1.25em;
+}
+
+article {
+  padding-left: 1em;
+}
+
+// Index.html - posts
+h3.article-title {
+  margin-bottom: 0em;
+  color: #3a91cb;
+}
+
+// Article infos | infos_bottom.html
+.subheader {
+  color: #aaaaaa;
+  margin-bottom: 1.2em;
+}
+
+a.article-info {
+  color: #aaaaaa;
+}
+
+// Archives.html
+.table-archive {
+  border: none;
+}
+
+// Index.html - line separator for posts
+hr.gradient {
+  border: 0;
+  height: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+// Syntax Highlighting
+.highlight > pre {
+  word-wrap: normal;
+  white-space: pre;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background: #e0e0e0;
+  padding: 1em;
+  overflow: auto;
+  font-weight: normal;
+}
+
+#main-content {
+  background-color: #fafaff;
+  border-radius: 1rem;
+}
+
+.footer {
+  background-color: #333;
+  background: linear-gradient(to bottom, #555, #333);
+  color: #666;
+  padding: 13px;
+}

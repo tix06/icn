@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+//
+// Normalize
+//
+
+@import "../bower_components/foundation/scss/normalize.scss";
+
+
+//
+// Foundation
+//
+
+// Fonctions foundation
+@import "../bower_components/foundation/scss/foundation/_functions.scss";
+// Variables foundation
+@import "foundation-settings";
+// Fichiers foundation
+@import "foundation";
+// Fichiers Font-awesome
+//  @import "../bower_components/foundation/scss/fontawesome/";
+
+

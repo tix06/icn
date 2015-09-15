@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ICN</title><link>http://benjaminabel.github.io/icn/</link><description></description><atom:link href="http://benjaminabel.github.io/icn/feeds/benjamin-abel.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 22 Apr 2015 00:00:00 +0200</lastBuildDate><item><title>Définition de l'épreuve d'icn au baccalauréat</title><link>http://benjaminabel.github.io/icn/officiel/definition-de-lepreuve-dicn-au-baccalaureat/</link><description>&lt;h1 id="structure-de-lepreuve"&gt;Structure de l'épreuve&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Durée : 20 minutes maximum&lt;/li&gt;
+&lt;li&gt;Coefficient : 2&lt;/li&gt;
+&lt;li&gt;Notée sur 20 points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;À la date fixée par le professeur chargé de l'enseignement d'informatique et sciences du numérique, le candidat se présente à l'entretien muni de son dossier-projet.&lt;/p&gt;
+&lt;p&gt;Le dossier-projet de &lt;strong&gt;5 à 10 pages&lt;/strong&gt;, hors annexes, doit être élaboré à l'aide de l'outil informatique.&lt;/p&gt;
+&lt;p&gt;Ce projet est structuré de façon à mettre en évidence :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;le but visé et les moyens choisis pour atteindre ce but ;&lt;/li&gt;
+&lt;li&gt;la démarche de projet qui a conduit au résultat tel que présenté ;&lt;/li&gt;
+&lt;li&gt;la dimension collaborative du projet liée au travail en équipe (2 à 3 élèves).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L'épreuve est composée de deux parties qui se déroulent consécutivement.&lt;/p&gt;
+&lt;h2 id="premiere-partie-evaluation-dun-projet-et-soutenance-orale"&gt;Première partie - Évaluation d'un projet et soutenance orale&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Durée : 8 minutes maximum&lt;/li&gt;
+&lt;li&gt;Notée sur 8 points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le candidat effectue une présentation orale de son projet, d'une durée maximale de 8 minutes, pendant laquelle il n'est pas interrompu. Il s'appuie pour cela sur son dossier-projet.&lt;/p&gt;
+&lt;h2 id="deuxieme-partie-dialogue-argumente-avec-la-commission-devaluation"&gt;Deuxième partie - Dialogue argumenté avec la commission d'évaluation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Durée : 12 minutes minimum&lt;/li&gt;
+&lt;li&gt;Notée sur 12 points&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La commission d'évaluation interroge le candidat sur différents aspects de son projet et sur son lien avec les compétences fixées par le programme, puis élargit ce questionnement aux autres compétences spécifiées dans le programme. &lt;/p&gt;
+&lt;p&gt;Cette interrogation a notamment pour but de vérifier que le candidat s'est approprié les notions fondamentales, sait les utiliser dans un contexte particulier ou les relier aux autres enseignements scientifiques spécifiques de la série.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57489"&gt;Source: Bulletin officiel spécial n°7 du 6 octobre 2011&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Wed, 22 Apr 2015 00:00:00 +0200</pubDate><guid>tag:benjaminabel.github.io,2015-04-22:icn/officiel/definition-de-lepreuve-dicn-au-baccalaureat/</guid><category>icn</category><category>programme</category><category>BO</category><category>BAC</category></item><item><title>Ajouter du dynamisme avec javascript</title><link>http://benjaminabel.github.io/icn/html/ajouter-du-dynamisme-avec-javascript/</link><description>&lt;p&gt;&lt;a title="Par Chris Williams [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AUnofficial_JavaScript_logo_2.svg"&gt;&lt;img width="256" alt="Unofficial JavaScript logo 2" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/256px-Unofficial_JavaScript_logo_2.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs. &amp;gt;Le langage a été créé en 1995 par Brendan Eich (Brendan Eich étant membre du conseil d'administration de la fondation Mozilla à cette époque) pour le compte de Netscape Communications Corporation. &lt;a href="http://fr.wikipedia.org/wiki/JavaScript"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Attention à ne pas confondre le javascript et le java&lt;/strong&gt;, ce sont des langages différents.&lt;/p&gt;
+&lt;h1 id="integration-de-code-javascript-dans-une-page-html"&gt;Intégration de code &lt;code&gt;javascript&lt;/code&gt; dans une page html&lt;/h1&gt;
+&lt;p&gt;Le code javascript peut être intégré directement grâce à la balise html &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;, soit dans écrit directement dans l'en-tête du document(&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;), soit en utilisant un fichier séparé avec l'extension &lt;code&gt;.js&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="directement-dans-la-page-html"&gt;Directement dans la page html&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un peu de javascript&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+          // Alert crée une fenêtre d&amp;#39;affichage sur l&amp;#39;écran pour l&amp;#39;utilisateur
+          alert(&amp;quot;Hello world !&amp;quot;);
+          // console.log() écrit dans la console du navigateur pour le développeur
+          console.log(&amp;quot;Script Hello world exécuté.&amp;quot;)
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Titre principal de mon document&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Regarde maman, je suis en train d&amp;#39;ajouter du code javascript à ma page.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="dans-un-fichier-scriptjs-separe"&gt;Dans un fichier &lt;code&gt;script.js&lt;/code&gt; séparé&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un document minuscule&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;script.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt; 
+  &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Titre principal de mon document&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Regarde maman, je suis en train d&amp;#39;ajouter du code javascript à ma page.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="tester-du-code-javascript-grace-a-lardoise"&gt;Tester du code javascript grâce à l'ardoise&lt;/h2&gt;
+&lt;p&gt;La plupart de navigateurs dispose d'une console pour tester le code javascript. Dans le cas de firefox, on la lance avec le raccourci &lt;kbd&gt;MAJ+F4&lt;/kbd&gt;. Sinon, vous pouvez y accéder par le menu de &lt;code&gt;Développement web&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Il est aussi très utile d'ouvrir également la console &lt;kbd&gt;CTRL+MAJ+K&lt;/kbd&gt; web pour pouvoir afficher des résultats dans celle-ci grâce à la fonction &lt;code&gt;console.log()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;L'éxecution du code javascript s'effectue en appuyant sur le bouton &lt;code&gt;Exécuter&lt;/code&gt; (ou le raccourci clavier &lt;kbd&gt;CTRL+R&lt;/kbd&gt;)&lt;/p&gt;
+&lt;h1 id="syntaxe-du-javascript"&gt;Syntaxe du javascript&lt;/h1&gt;
+&lt;p&gt;Il s'agit d'un langage très complet, qui ne peut pas être expliqué en quelques lignes, pour une référence plus complète, voir l'article Wikipedia &lt;a href="http://fr.wikipedia.org/wiki/Syntaxe_JavaScript"&gt;Syntaxe javascript&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les &lt;strong&gt;commentaires&lt;/strong&gt; sont notés précédés de deux barres obliques: &lt;code&gt;//&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Les instructions simples sont terminées par un &lt;strong&gt;point-virgule&lt;/strong&gt;: &lt;code&gt;;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;L'&lt;strong&gt;indentation&lt;/strong&gt; des blocs d'instruction n'est pas obligatoire comme en python, mais souhaitable.&lt;/li&gt;
+&lt;li&gt;Les blocs d'instructions sont entourés d'accolades.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;if (expression1)
+ {
+   //instructions réalisées si expression1 est vraie;
+ }
+ else
+ {
+   //instructions réalisées dans les autres cas;
+ }
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="variables-javascript"&gt;Variables javascript&lt;/h1&gt;
+&lt;p&gt;Les variables n'ont pas de type défini, on parle de typage dynamique comme en python. Il est possible de modifier le type de donnée contenue dans une variable.&lt;/p&gt;
+&lt;p&gt;Coller le code suivant dans l'ardoise javascript pour l'éxecuter et l'éxaminer.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;myString&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;123.456&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt; &lt;span class="nt"&gt;permet&lt;/span&gt; &lt;span class="nt"&gt;d&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;afficher la valeur dans la console web&lt;/span&gt;
+&lt;span class="s1"&gt;console.log(myString);&lt;/span&gt;
+
+&lt;span class="s1"&gt;// On peut directement inspecter une ligne directement&lt;/span&gt;
+&lt;span class="s1"&gt;// en la sélectionnant puis Examiner (CTRL+I)&lt;/span&gt;
+&lt;span class="s1"&gt;typeof(myString); // value:string&lt;/span&gt;
+
+&lt;span class="s1"&gt;// Ou un beau console.log pour garder des traces de l&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;éxecution&lt;/span&gt; &lt;span class="nt"&gt;du&lt;/span&gt; &lt;span class="nt"&gt;programme&lt;/span&gt;
+&lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;myString est actuellement du type:&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;typeof&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;);&lt;/span&gt;
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;Illustration&lt;/span&gt; &lt;span class="nt"&gt;du&lt;/span&gt; &lt;span class="nt"&gt;typage&lt;/span&gt; &lt;span class="nt"&gt;dynamique&lt;/span&gt;
+&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;myString&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;Number&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;typeof&lt;/span&gt; &lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;value&lt;/span&gt;&lt;span class="nd"&gt;:number&lt;/span&gt;
+&lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;myString est actuellement du type:&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;typeof&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Il est vivement conseillé de déclarer ses variables avec l'instruction &lt;code&gt;var&lt;/code&gt; pour des questions de portée de variable.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Remarque&lt;/em&gt; le javascript définit aussi des &lt;strong&gt;constantes&lt;/strong&gt; avec l'instruction &lt;code&gt;const&lt;/code&gt; qui comme son nom l'indique ne peut pas changer de valeur grâce à une assignation ou être re-déclarée au cours du programme contrairement à une variable.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;// Réassignation possible avec les variables
+var c = 6;
+console.log(c); // donne 6
+c = 4;
+console.log(c); // donne 4
+
+// Réassignation impossible avec les constantes
+const a = 5;
+a = 4;  // Exception: redeclaration of const a
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="fonctions-javascript"&gt;Fonctions javascript&lt;/h1&gt;
+&lt;p&gt;Une fonction est déclarée de la façon suivante en javascript:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;nomDeMaFonction&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;argument1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;argument2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;...)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;instructions&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;valeur_renvoyée_par_ma&lt;/span&gt; &lt;span class="nx"&gt;fonction&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Exemple&lt;/strong&gt;: la fonction carré&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// Déclaration de la fonction&lt;/span&gt;
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;carré&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;nombre&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;nombre&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;nombre&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Appel de la fonction&lt;/span&gt;
+
+&lt;span class="nx"&gt;carré&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// retourne 4!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt;: Lorsqu'on déclare une variable dans une fonction, celle-ci a une portée locale et ne peut pas être utilisée en dehors de la fonction.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// n ici une variable locale dans la fonction&lt;/span&gt;
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;quatreFois&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;nombre&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;nombre&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Elle n&amp;#39;existe pas en dehors de la fonction&lt;/span&gt;
+&lt;span class="nx"&gt;quatreFois&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// retourne 8!&lt;/span&gt;
+&lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// Exception: n is not defined&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="modifier-le-code-html-grace-a-javascript"&gt;Modifier le code html grâce à javascript&lt;/h1&gt;
+&lt;h2 id="execution-differee"&gt;Execution différée&lt;/h2&gt;
+&lt;p&gt;Il convient d'attendre que la page html soit chargée avant d'éxecuter le code javascript. De nombreux développeurs placent le code javascript à la fin du corps du document avant la balise fermante &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Cependant il est aussi possible de lancer le code javascript qu'après le chargement de la fenêtre en placant le code dans une fonction anonyme s'executant après le chargement de la page.&lt;em&gt;(Vous allez voir, en javascript, les fonctions sont très présentes)&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+  &lt;span class="c1"&gt;// code javascript à éxecuter&lt;/span&gt;
+  &lt;span class="c1"&gt;// après le chargement de la page&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="acceder-a-un-element-html"&gt;Accéder à un élément html&lt;/h2&gt;
+&lt;p&gt;La méthode &lt;code&gt;document.getElementById()&lt;/code&gt; permet de sélectionner un élément html à partir de son &lt;code&gt;id&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On peut alors modifier son contenu grâce à la propriété &lt;code&gt;innerHTML&lt;/code&gt;, &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;document.getElementById(&amp;quot;this-id&amp;quot;).innerHTML = &amp;quot;New text!&amp;quot;;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ou encore modifier son style grâce à la prpriété &lt;code&gt;style&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;document.getElementById(&amp;quot;this-id&amp;quot;).style.color = &amp;quot;##FFAA85&amp;quot;;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Exemple de code permettant d'afficher l'heure à laquelle vous avez ouvert la page.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un peu de javascript&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            window.onload = function() {
+                    // Stocke l&amp;#39;heure dans la vaariable d
+                    var d = new Date();
+                    // Ajoute cette heure dans l&amp;#39;élément html ayant pour id heure
+                    document.getElementById(&amp;quot;heure&amp;quot;).innerHTML = d.toLocaleTimeString();
+
+                }
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Javascript en action&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Page ouverte à: &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;heure&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Encore mieux afficher l'heure actuelle en éxecutant l'affichage toutes les mille millisecondes&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;!doctype html&amp;gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un peu de javascript&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            window.onload = function() {
+                function myTimer() {
+                    var d = new Date();
+                    document.getElementById(&amp;quot;heure&amp;quot;).innerHTML = d.toLocaleTimeString();
+
+                }
+
+                setInterval(function() {
+                        myTimer()
+                    }, 1000);
+            }
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Javascript en action&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Il est: &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;heure&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="controler-des-evenements"&gt;Contrôler des événements&lt;/h2&gt;
+&lt;p&gt;On éxecuter du javascript lorsqu'on &lt;strong&gt;presse un bouton&lt;/strong&gt; avec  l'attribut &lt;code&gt;onclick&lt;/code&gt; &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;h1&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Mon titre de niveau 1&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;button&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;onclick=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;document.getElementById(&amp;#39;id1&amp;#39;).style.color = &amp;#39;red&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            Attention! Que va-t-il se passer?&lt;span class="nt"&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ou encore lorsque la souris survole un élément avec l'attribut &lt;code&gt;onmouseover&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;onmouseover=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mOver(this)&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;onmouseout=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mOut(this)&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;background-color:#D5AA12;font-size: 13rem;width:19rem;padding:40px;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            Sol&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+            &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;mOver&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Fa&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;background&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#FF5546&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+
+            &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;mOut&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Sol&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;background&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#D5AA12&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="pour-aller-plus-loin"&gt;Pour aller plus loin&lt;/h2&gt;
+&lt;p&gt;Lorsqu'on modifie une page html grâce à javascript, on manipule le &lt;code&gt;DOM&lt;/code&gt;: Document Object Model. Pour plus de précisions et d'autres exemples interactifs voir l'excellent site &lt;a href="http://www.w3schools.com/js/js_htmldom.asp"&gt;w3schools&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Tue, 04 Nov 2014 00:00:00 +0100</pubDate><guid>tag:benjaminabel.github.io,2014-11-04:icn/html/ajouter-du-dynamisme-avec-javascript/</guid><category>icn</category><category>html5</category><category>javascript</category></item><item><title>Ajouter du style avec css</title><link>http://benjaminabel.github.io/icn/html/ajouter-du-style-avec-css/</link><description>&lt;p&gt;&lt;a title="Par W3C (http://www.w3.org/html/logo/) [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AClass-header-css3.jpg"&gt;&lt;img width="256" alt="Class-header-css3" src="//upload.wikimedia.org/wikipedia/commons/5/52/Class-header-css3.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000. &lt;a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="syntaxe"&gt;Syntaxe&lt;/h1&gt;
+&lt;p&gt;Une règle css est constituée d'un sélecteur suivi d'un bloc de déclaration entre accolades. Chaque déclaration se termine par un point-virgule.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;exemple&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Cette règle permet de colorier en rouge et de centrer tous les paragraphes du document html.&lt;/p&gt;
+&lt;p&gt;Il est possible de sélectionner plusieurs éléments en les séparant par des virgules.&lt;/p&gt;
+&lt;p&gt;Les commentaires utilisent la syntaxe suivante: &lt;code&gt;/* Un commentaire */&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="integration-de-code-css-dans-une-page-html"&gt;Intégration de code css dans une page html&lt;/h1&gt;
+&lt;p&gt;Il existe trois façons d'insérer une feuille de style au sein d'un document html:&lt;/p&gt;
+&lt;h2 id="insertion-directe-dans-les-balises-html"&gt;Insertion directe dans les balises html&lt;/h2&gt;
+&lt;p&gt;On utilise alors l'attribut style au sein de la balise ouvrante de l'élément à styler.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;h1&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;color:blue; margin-left:30px;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;This is a heading.&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Cette méthode est peu recommandée en raison du but même la définition des langages html et css qui est de séparer le fond et la forme.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="utilisation-dune-feuille-de-style-interne"&gt;Utilisation d'une feuille de style interne&lt;/h2&gt;
+&lt;p&gt;On intègre le code css au sein de balises &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; dans l'entête du document(le &lt;head&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+        body {
+        background-color: linen;
+        }
+    h1 {
+        color: maroon;
+        margin-left: 40px;
+        }
+    &lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Méthode pratique lorsque l'on a des documents html d'une seule page ou avec des styles spécifiques.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="utilisation-dune-feuille-de-style-externe"&gt;Utilisation d'une feuille de style externe&lt;/h2&gt;
+&lt;p&gt;on écrit le code css dans un fichier avec l'extension &lt;code&gt;.css&lt;/code&gt; et on l'appelle dans l'entête du document(le &lt;head&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mystyle.css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;C'est la méthode préférée lorsque l'on a un ensemble de pages qui contiennent des styles identiques, cela permet d'alléger l'écriture du code et les requêtes vers le serveur de documents.&lt;/p&gt;
+&lt;h1 id="ordre-dapplication-des-regles"&gt;Ordre d'application des règles&lt;/h1&gt;
+&lt;p&gt;Ce n'est pas pour rien qu'on parle de feuilles de styles en cascade, car en fait la difficulté en css est souvent que l'on définit des règles différentes pour des tags identiques, et qu'il faut savoir qu'elle règle va s'appliquer sur notre élément.&lt;/p&gt;
+&lt;p&gt;Par ordre de priorité croissante:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Règles par défaut du navigateur&lt;/li&gt;
+&lt;li&gt;Feuille de style externe&lt;/li&gt;
+&lt;li&gt;Feuille de style interne&lt;/li&gt;
+&lt;li&gt;Style au sein d'un élément html.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="selecteurs-plus-elabores"&gt;Sélecteurs plus élaborés&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Il est possible de sélectionner &lt;strong&gt;plusieurs balises&lt;/strong&gt; à la fois pour leur appliquer une règle commune, ces balises doivent alors être séparées par des &lt;em&gt;virgules&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;h1, h2, h3 {color: lime;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La virgule est très importante, car si on sépare les sélecteurs par des &lt;em&gt;espaces&lt;/em&gt; il s'agit d'une &lt;strong&gt;sélection par descendence&lt;/strong&gt;, le code css suivant par exemple ne sélectionne que les paragraphes contenus dans une balise &lt;code&gt;div&lt;/code&gt;(&lt;a href="https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_descendant"&gt;voir mdn pour plus de détails&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;div p {background-color: red;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Pour appliquer &lt;strong&gt;un même style à plusieurs éléments&lt;/strong&gt; on peut leur ajouter un attribut html &lt;code&gt;class="class-name"&lt;/code&gt;, qui pourra être sélectionné en css avec le sélecteur &lt;code&gt;.class-name&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pour appliquer &lt;strong&gt;un style specifique à un unique éléments&lt;/strong&gt; on lui ajoute un attribut html &lt;code&gt;id="id-name"&lt;/code&gt;, qui pourra être sélectionné en css avec le sélecteur &lt;code&gt;#id-name&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="des-styles-plus-elabores"&gt;Des styles plus élaborés&lt;/h1&gt;
+&lt;h2 id="references-des-proprietes-css"&gt;Références des propriétés &lt;code&gt;css&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Cette référence CSS sur &lt;a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference"&gt;MDN&lt;/a&gt; liste toutes les propriétés standards CSS.&lt;/p&gt;
+&lt;h2 id="tutoriels-et-exemples-en-ligne"&gt;Tutoriels et exemples en ligne&lt;/h2&gt;
+&lt;p&gt;Le site &lt;a href="http://www.w3schools.com/css/css_examples.asp"&gt;w3cschools&lt;/a&gt; présente des exemples éditables et dynamiques de situations courantes lors du stylage d'une page web, voir notamment les pages suivantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_background.asp"&gt;CSS Backgrounds&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_backgrounds.asp"&gt;CSS3 Backgrounds&lt;/a&gt; pour les &lt;strong&gt;arrières plans&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_text.asp"&gt;CSS Text&lt;/a&gt;, &lt;a href="http://www.w3schools.com/css/css_font.asp"&gt;CSS Fonts&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_fonts.asp"&gt;CSS3 Fonts&lt;/a&gt; pour la &lt;strong&gt;mise en forme du texte&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_list.asp"&gt;CSS Lists&lt;/a&gt; pour les &lt;strong&gt;listes&lt;/strong&gt; numérotées on non.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_boxmodel.asp"&gt;CSS Box Model&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_borders.asp"&gt;CSS3 Borders&lt;/a&gt; pour les modèles de &lt;strong&gt;boîtes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css3_transitions.asp"&gt;CSS3 Transitions&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_animations.asp"&gt;CSS3 Animations&lt;/a&gt; pour des effets &lt;strong&gt;dynamiques&lt;/strong&gt; sur vos pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="deboguer-son-code-css"&gt;Déboguer son code css&lt;/h1&gt;
+&lt;h2 id="inspecteur-de-styles-du-navigateur"&gt;Inspecteur de styles du navigateur&lt;/h2&gt;
+&lt;p&gt;Pour savoir qu'elle règle a été utilisée par le navigateur, la console web du navigateur est d'un grand secours. On peut par exemple inspecter un élément et savoir qu'elles règles css s'appliquent et qu'elles règles css ont été suplantés.&lt;/p&gt;
+&lt;p&gt;Pour accéder à la console web, taper &lt;kbd&gt;CTRL+MAJ+K&lt;/kbd&gt; sur firefox, pour inspecter un élément il suffit de le sélectionner et de faire un click droit de la souris puis de taper &lt;kbd&gt;x&lt;/kbd&gt;.&lt;/p&gt;
+&lt;h2 id="validateur-du-w3c"&gt;Validateur du w3c&lt;/h2&gt;
+&lt;p&gt;Le site du w3c propose comme pour le language html un (validateur)[http://jigsaw.w3.org/css-validator/#validate_by_input+with_options] de fichier css:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Tue, 04 Nov 2014 00:00:00 +0100</pubDate><guid>tag:benjaminabel.github.io,2014-11-04:icn/html/ajouter-du-style-avec-css/</guid><category>icn</category><category>html5</category><category>css</category></item><item><title>Dessiner dans une page web</title><link>http://benjaminabel.github.io/icn/html/dessiner-dans-une-page-web/</link><description>&lt;p&gt;Il existe deux grands types de formats d'images:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;les images matricielles,&lt;/li&gt;
+&lt;li&gt;et les images vectorielles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ces deux types d'images peuvent être intégrées dans une page web grâce à la balise &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;, mais elles peuvent être aussi codées directement dans la page grâce aux balises &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id="dessin-vectoriel-en-svg"&gt;Dessin vectoriel en &lt;code&gt;svg&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a title="W3C [CC-BY-2.5 (http://creativecommons.org/licenses/by/2.5)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3ASVG_Logo.svg"&gt;&lt;img width="256" alt="SVG Logo" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/256px-SVG_Logo.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Le format svg est un format d'image vectoriel proposé par le W3C.&lt;/p&gt;
+&lt;p&gt;Dans ce format, les dessins sont décrits par un ensemble formes géométriques simples (arcs de cercle ou d'ellipse, segments de droite, courbes de Bézier...)&lt;/p&gt;
+&lt;h2 id="syntaxe"&gt;Syntaxe&lt;/h2&gt;
+&lt;p&gt;Le fichier svg est un fichier xml qui indique les formes présentes dans le dessin(&lt;code&gt;rect&lt;/code&gt; pour rectangle, &lt;code&gt;circle&lt;/code&gt; pour cercle,...)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemple:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Créer un fichier texte appelé &lt;code&gt;image.svg&lt;/code&gt; avec le contenu suivant.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;svg&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;200&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;250&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;version=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;1.1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/2000/svg&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class="nt"&gt;&amp;lt;rect&lt;/span&gt; &lt;span class="na"&gt;x=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;y=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;30&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;30&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;black&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;transparent&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;rect&lt;/span&gt; &lt;span class="na"&gt;x=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;60&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;y=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;rx=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;ry=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;30&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;30&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;black&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;transparent&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+  &lt;span class="nt"&gt;&amp;lt;circle&lt;/span&gt; &lt;span class="na"&gt;cx=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;25&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;cy=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;75&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;r=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;20&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;red&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;transparent&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;ellipse&lt;/span&gt; &lt;span class="na"&gt;cx=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;75&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;cy=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;75&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;rx=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;20&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;ry=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;red&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;transparent&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+  &lt;span class="nt"&gt;&amp;lt;line&lt;/span&gt; &lt;span class="na"&gt;x1=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;10&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;x2=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;50&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;y1=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;110&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;y2=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;150&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;orange&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;transparent&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;polyline&lt;/span&gt; &lt;span class="na"&gt;points=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;orange&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;transparent&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+  &lt;span class="nt"&gt;&amp;lt;polygon&lt;/span&gt; &lt;span class="na"&gt;points=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180&amp;quot;&lt;/span&gt;
+      &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;green&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;transparent&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+  &lt;span class="nt"&gt;&amp;lt;path&lt;/span&gt; &lt;span class="na"&gt;d=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;M20,230 Q40,205 50,230 T90,230&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;none&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;blue&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;5&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Lorsque vous ouvrez ce fichier avec une visionneuse d'images, vous devriez obtenir l'image suivante:&lt;/p&gt;
+&lt;div style='background-color: lightgray;'&gt;
+&lt;svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+
+  &lt;rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/&gt;
+  &lt;rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/&gt;
+
+  &lt;circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5"/&gt;
+  &lt;ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5"/&gt;
+
+  &lt;line x1="10" x2="50" y1="110" y2="150" stroke="orange" fill="transparent" stroke-width="5"/&gt;
+  &lt;polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+      stroke="orange" fill="transparent" stroke-width="5"/&gt;
+
+  &lt;polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+      stroke="green" fill="transparent" stroke-width="5"/&gt;
+
+  &lt;path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/&gt;
+&lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Essayez modifier certains des paramètres du fichier svg pour vous familiariser avec sa syntaxe, vous pourrez parfaire votre connaissance en utilisant cette page du &lt;a href="https://developer.mozilla.org/fr/docs/Web/SVG/Tutoriel/Formes_de_base"&gt;Tutoriel sur MDN&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="integration"&gt;Intégration&lt;/h2&gt;
+&lt;p&gt;Il peut être intégré à des pages web soit:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;En appelant un fichier &lt;code&gt;svg&lt;/code&gt; externe grâce à la balise &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;lt;img src=&amp;quot;image.svg&amp;quot;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Soit en intégrant directement le code &lt;code&gt;svg&lt;/code&gt; dans le code &lt;code&gt;html&lt;/code&gt; de la page grâce à la baise &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+
+  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Un dessin vectoriel en svg&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;svg&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;200&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;200&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;background-color: lightgray;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;circle&lt;/span&gt; &lt;span class="na"&gt;cx=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;50%&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;cy=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;50%&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;r=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;40%&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;green&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;stroke-width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;3%&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;fill=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;yellow&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;RENDU:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;svg width="200" height="200" style="background-color: lightgray;"&gt;
+&lt;circle cx="50%" cy="50%" r="40%" stroke="green" stroke-width="3%" fill="yellow" /&gt;
+&lt;/svg&gt;&lt;/p&gt;
+&lt;h1 id="dessin-matriciel-dans-le-canvas"&gt;Dessin matriciel dans le &lt;code&gt;canvas&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;La balise &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; qui fait partie de la spécification &lt;strong&gt;HTML5&lt;/strong&gt; du &lt;em&gt;W3C&lt;/em&gt; permet d'effectuer des rendus dynamiques d'images bitmap dans le navigateur grâce à des scripts &lt;code&gt;javascript&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Pour utiliser les zones de dessin canvas, on ajoute un élément &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt; vide dans le corps du document avec un id afin de pouvoir le modifier à partir du javascript.&lt;/p&gt;
+&lt;h2 id="code-html"&gt;Code &lt;code&gt;html&lt;/code&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;monCanvas&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;500&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;400&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    Votre navigateur ne  supporte pas la balise HTML5 Canvas.
+&lt;span class="nt"&gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Le texte présent dans l'élément canvas n'est affiché que si le navigateur ne connait pas cette balise.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="code-javascript"&gt;Code &lt;code&gt;javascript&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Nous allons maintenant dessiner dans ce &lt;code&gt;canvas&lt;/code&gt; grâce à un script javascript qu'on intégrera comme n'importe quel code javascript(voir &lt;a href="http://benjaminabel.github.io/icn/html/ajouter-du-dynamisme-avec-javascript/"&gt;Ajouter du dynamisme avec javascript&lt;/a&gt;)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;theCanvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;monCanvas&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;theCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getContext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;drawScreen&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;//background&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#ffffaa&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillRect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;300&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="c1"&gt;//text&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#333333&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;font&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;20px Sans-Serif&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;textBaseline&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;top&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Bienvenue dan sle monde du canvas&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="c1"&gt;//box&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;strokeStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#000000&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;strokeRect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;490&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;290&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nx"&gt;drawScreen&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Voici le code html complet:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Dessin en canvas&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            window.onload = function() {
+
+                var theCanvas = document.getElementById(&amp;quot;monCanvas&amp;quot;);
+                var ctx = theCanvas.getContext(&amp;quot;2d&amp;quot;);
+
+                function drawScreen() {
+                    //background
+                    ctx.fillStyle = &amp;quot;#ffffaa&amp;quot;;
+                    ctx.fillRect(0, 0, 500, 400);
+
+                    //text
+                    ctx.fillStyle = &amp;quot;#333333&amp;quot;;
+                    ctx.font = &amp;quot;18px Sans-Serif&amp;quot;;
+                    ctx.textBaseline = &amp;quot;top&amp;quot;;
+                    ctx.fillText(&amp;quot;Bienvenue dans le monde du canvas&amp;quot;, 95, 110);
+                    //box
+                    ctx.strokeStyle = &amp;quot;#000000&amp;quot;;
+                    ctx.strokeRect(5, 5, 490, 390);
+
+                    //smiley
+                    ctx.beginPath();
+                    ctx.arc(250, 200, 50, 0, Math.PI * 2, true); // Tête
+                    ctx.fillStyle = &amp;quot;#FFFF00&amp;quot;;
+                    ctx.fill(); // Colorier la tête en jaune
+                    ctx.moveTo(285, 200);
+                    ctx.arc(250, 200, 35, 0, Math.PI, false); // Bouche
+                    ctx.moveTo(240, 190);
+                    ctx.arc(235, 190, 5, 0, Math.PI * 2, true); // Oeil gauche
+                    ctx.moveTo(270, 190);
+                    ctx.arc(265, 190, 5, 0, Math.PI * 2, true); // Oeil droit
+
+                    ctx.lineWidth = 5;
+                    ctx.stroke();
+
+                }
+
+                drawScreen();
+
+            }
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;monCanvas&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;500&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;400&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            Votre navigateur ne supporte pas la balise HTML5 Canvas.
+        &lt;span class="nt"&gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;RENDU&lt;/strong&gt;
+&lt;img title="Rendu de l'élément canvas" src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png" class="center" alt="Rendu de l'élément canvas"&gt;&lt;/p&gt;
+&lt;p&gt;Essayez modifier certains des paramètres du code pour vous familiariser avec sa syntaxe, puis ajouter des éléments en utilisant cette page de référence de &lt;a href="http://www.w3schools.com/tags/ref_canvas.asp"&gt;w3schools&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="creer-des-animations"&gt;Créer des animations&lt;/h2&gt;
+&lt;p&gt;Pou animer un dessin canvas, nous allons utiliser la méthode &lt;code&gt;window.requestAnimationFrame()&lt;/code&gt;, cette méthode permet d'éxecuter une fonction à chaque affichage de la fenêtre du navigateur(soit environ 60 images/seconde).&lt;/p&gt;
+&lt;p&gt;On crée ainsi une fonction &lt;code&gt;anime()&lt;/code&gt; qui s'appelle elle-même à chaque rafraichissement de l'affichage.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// Création de la fonction&lt;/span&gt;
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;anime&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;requestAnimationFrame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;anime&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="c1"&gt;// Commandes de dessin&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Appel de la fonction pour lancer l&amp;#39;animation&lt;/span&gt;
+&lt;span class="nx"&gt;anime&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ensuite pour que l'affichage soit différent à chaque rafraichissement il faut que les commandes dessin utilisent des variables de coordonnées.&lt;/p&gt;
+&lt;h3 id="creer-un-monstre-anime"&gt;Créer un monstre animé&lt;/h3&gt;
+&lt;p&gt;Utiliser le lien suivant pour voir comment créer un dessin animé en utilisant des coordonnées aléatoires.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://jsbin.com/garagowe/14/edit"&gt;http://jsbin.com/garagowe/14/edit&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="deplacer-un-objet-et-detecter-les-bords-pour-quil-rebondisse"&gt;Déplacer un objet et détecter les bords pour qu'il rebondisse&lt;/h3&gt;
+&lt;p&gt;Voici par exemple comment on peut dessiner le même smiley que tout à l'heure, mais à des coordonnées x et y, données en paramètres de la fonction. Grâce à cette fonction il suffira d'éxecuter &lt;code&gt;Smiley(60,70)&lt;/code&gt; pour dessiner un smiley centré aux coordonnées &lt;code&gt;x = 60&lt;/code&gt; et &lt;code&gt;y = 70&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;Smiley&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;dessineToi&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="c1"&gt;//smiley&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;beginPath&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;arc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;Math&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;PI&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// Tête&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#FFFF00&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;// Colorier la tête en jaune&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;moveTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;35&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;arc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;35&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;Math&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;PI&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// Bouche&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;moveTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;arc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;Math&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;PI&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// Oeil gauche&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;moveTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;arc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;Math&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;PI&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// Oeil droit&lt;/span&gt;
+
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;lineWidth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;stroke&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="p"&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;On crée ensuite une méthode &lt;code&gt;deplaceToi&lt;/code&gt; à l'objet  &lt;code&gt;Smiley&lt;/code&gt;  qui ajoute &lt;code&gt;vx&lt;/code&gt; à la coordonnée &lt;code&gt;x&lt;/code&gt; et &lt;code&gt;vy&lt;/code&gt; à la coordonnée &lt;code&gt;y&lt;/code&gt; à chaque image.&lt;/p&gt;
+&lt;p&gt;Puis une fonction &lt;code&gt;checkWallCollision()&lt;/code&gt; qui vérifie que le smiley ne touche pas les bords de l'écran, et qui inverse une des composante de la vitesse lorsque le smiley touche une paroi horizontale ou verticale.&lt;/p&gt;
+&lt;h3 id="code-complet"&gt;Code complet&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Dessin en canvas&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            window.onload = function() {
+                // Variable qui correspond au canvas
+                var monCanvas = document.getElementById(&amp;quot;monCanvas&amp;quot;);
+                // Dimensions du canvas
+                var width = monCanvas.width;
+                var height = monCanvas.height;
+                // contexte graphique 2D
+                var ctx = monCanvas.getContext(&amp;#39;2d&amp;#39;);
+
+                // Inititialisation des coordonnées et vitesses du smiley
+                var smiley = new Smiley(width / 2, height / 2, (10 * Math.random()) - 5, (10 * Math.random()) - 5);
+
+                // Lancement de l&amp;#39;animation
+                anime();
+
+                function anime() {
+                    // 1) On dessine le fond du canvas
+                    dessineFond();
+
+                    // 2) On déplace le smiley
+                    smiley.deplaceToi();
+
+                    // 3) On regarde si le smiley touche un mur
+                    checkWallCollision(smiley);
+
+                    // 3) On dessine le smiley
+                    smiley.dessineToi();
+
+                    // On demande une nouvelle frame d&amp;#39;animation
+                    window.requestAnimationFrame(anime);
+                }
+
+                function dessineFond() {
+                    // On efface l&amp;#39;écran
+                    ctx.clearRect(0, 0, monCanvas.width, monCanvas.height);
+
+                    //background
+                    ctx.fillStyle = &amp;quot;#ffffcc&amp;quot;;
+                    ctx.fillRect(0, 0, monCanvas.width, monCanvas.height);
+
+                    //box
+                    ctx.strokeStyle = &amp;quot;#000000&amp;quot;;
+                    ctx.strokeRect(5, 5, 490, 390);
+                }
+
+                // fonction smiley qui stocke ses coordonnées et sa vitesse
+                // et qui possède deux méthodes pour se dessiner et se déplacer
+
+                function Smiley(x, y, vx, vy) {
+                    this.x = x;
+                    this.y = y;
+                    this.vx = vx;
+                    this.vy = vy;
+                    this.radius = 50;
+
+                    this.dessineToi = function() {
+                        //smiley
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, 50, 0, Math.PI * 2, true); // Tête
+                        ctx.fillStyle = &amp;quot;#FFFF00&amp;quot;;
+                        ctx.fill(); // Colorier la tête en jaune
+                        ctx.moveTo(this.x + 35, this.y);
+                        ctx.arc(this.x, this.y, 35, 0, Math.PI, false); // Bouche
+                        ctx.moveTo(this.x - 10, this.y - 10);
+                        ctx.arc(this.x - 15, this.y - 10, 5, 0, Math.PI * 2, true); // Oeil gauche
+                        ctx.moveTo(this.x + 20, this.y - 10);
+                        ctx.arc(this.x + 15, this.y - 10, 5, 0, Math.PI * 2, true); // Oeil droit
+
+                        ctx.lineWidth = 5;
+                        ctx.stroke();
+                    };
+
+                    this.deplaceToi = function() {
+
+                        this.x += this.vx;
+                        this.y += this.vy;
+                    };
+                }
+
+                function checkWallCollision(objet) {
+                    if (objet.x &lt;span class="nt"&gt;&amp;lt; objet.radius&lt;/span&gt;&lt;span class="err"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+                        &lt;span class="na"&gt;objet.x =&lt;/span&gt; &lt;span class="s"&gt;objet.radius;&lt;/span&gt;
+                        &lt;span class="err"&gt;objet.vx&lt;/span&gt; &lt;span class="err"&gt;*=&lt;/span&gt; &lt;span class="err"&gt;-1;&lt;/span&gt;
+                    &lt;span class="err"&gt;}&lt;/span&gt;
+                    &lt;span class="err"&gt;if&lt;/span&gt; &lt;span class="err"&gt;(objet.x&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; width - (objet.radius)) {
+                        objet.x = width - (objet.radius);
+                        objet.vx *= -1;
+                    }
+                    if (objet.y &lt;span class="nt"&gt;&amp;lt; objet.radius&lt;/span&gt;&lt;span class="err"&gt;)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+                        &lt;span class="na"&gt;objet.y =&lt;/span&gt; &lt;span class="s"&gt;objet.radius;&lt;/span&gt;
+                        &lt;span class="err"&gt;objet.vy&lt;/span&gt; &lt;span class="err"&gt;*=&lt;/span&gt; &lt;span class="err"&gt;-1;&lt;/span&gt;
+                    &lt;span class="err"&gt;}&lt;/span&gt;
+                    &lt;span class="err"&gt;if&lt;/span&gt; &lt;span class="err"&gt;(objet.y&lt;/span&gt; &lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; height - (objet.radius)) {
+                        objet.y = height - (objet.radius);
+                        objet.vy *= -1;
+                    }
+                }
+
+
+            }
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;monCanvas&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;500&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;400&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            Votre navigateur ne supporte pas la balise HTML5 Canvas.
+        &lt;span class="nt"&gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;RENDU&lt;/strong&gt;
+&lt;em&gt;Attention ce rendu est une vidéo de capture d'écran à 15 image par seconde, le rendu réél est beaucoup plus fluide et continu.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;video autoplay loop id="myVideo" src="http://benjaminabel.github.io/icn/images/HTML/smiley.webm" type="video/webm"&gt;
+    Votre navigateur ne supporte pas les vidéos.
+&lt;/video&gt;&lt;/p&gt;
+&lt;script type="text/javascript" charset="utf-8"&gt;
+// script permettant de tourner en boucle car loop marche pas
+var myVideo = document.getElementById('video');
+if (typeof myVideo.loop == 'boolean') { // loop supported
+    myVideo.loop = true;
+} else { // loop property not supported
+    myVideo.on('ended', function () {
+    this.currentTime = 0;
+    this.play();
+    }, false);
+}
+myVideo.play();
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Tue, 04 Nov 2014 00:00:00 +0100</pubDate><guid>tag:benjaminabel.github.io,2014-11-04:icn/html/dessiner-dans-une-page-web/</guid><category>icn</category><category>html5</category><category>canvas</category><category>svg</category></item><item><title>Structure d'un document html</title><link>http://benjaminabel.github.io/icn/html/structure-dun-document-html/</link><description>&lt;p&gt;&lt;a title="W3C [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AHTML5_logo_and_wordmark.svg"&gt;&lt;img width="256" alt="HTML5 logo and wordmark" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/256px-HTML5_logo_and_wordmark.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HTML5 (HyperText Markup Language 5) est la dernière révision majeure d'HTML (format de données conçu pour représenter les pages web).&lt;/p&gt;
+&lt;p&gt;Dans le langage courant, HTML5 désigne souvent un ensemble de technologies Web (HTML5, CSS3 et JavaScript) permettant notamment le développement d'applications (cf. DHTML). &lt;a href="https://fr.wikipedia.org/wiki/HTML5"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Vous pouvez afficher le code html d'une page web, en cliquant droit sur celle-ci et en choisissant &lt;code&gt;Afficher le code source de la page&lt;/code&gt;, ou en utilisant sur Mozilla le raccourci: &lt;kbd&gt;CTRL+U&lt;/kbd&gt;.&lt;/p&gt;
+&lt;h1 id="balises-et-attributs"&gt;Balises et attributs&lt;/h1&gt;
+&lt;p&gt;Le langage html utilise des balises pour indiquer le sens sémantique des éléments d'une page. Ces balises ou tags permettent de construire une hiérachie au sein du document appelée DOM(Document Object Model)&lt;/p&gt;
+&lt;p&gt;Ces balises sont référencées sur le site &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"&gt;MDN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Par exemple:&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;les balises de titre (headings) &lt;code&gt;&amp;lt;h1&amp;gt;...&amp;lt;/h1&amp;gt;&lt;/code&gt; jusqu'à  &lt;code&gt;&amp;lt;h6&amp;gt;...&amp;lt;/h6&amp;gt;&lt;/code&gt; permettent d'utiliser jusqu'à six niveaux de titres dans la page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;la balise de paragraphe &lt;code&gt;&amp;lt;p&amp;gt;...&amp;lt;/p&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;les balises &lt;code&gt;&amp;lt;div&amp;gt;...&amp;lt;/div&amp;gt;&lt;/code&gt; permettent d'englober plusieurs autres éléments, ce sont des conteneurs qui permettent de rassembler ensemble divers éléments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Certaines balises sont auto-fermantes c'est à dire qu'elles ne présentent pas de balises fermantes. Par exemple la balise d'image &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;lt;img src=&amp;quot;mdn-logo-sm.png&amp;quot; alt=&amp;quot;MD Logo&amp;quot; /&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Les élements &lt;code&gt;src&lt;/code&gt; et &lt;code&gt;alt&lt;/code&gt; sont les attributs de notre image.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;src&lt;/code&gt;: source de l'image, ici un fichier local, mais une adresse web peut-être sépecifiée.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;alt&lt;/code&gt;: texte à afficher si la source ne peut-être trouvée.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="regles-decriture"&gt;Régles d'écriture&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Les balises ouvrantes et fermantes doivent toujours être correctement imbriquées, c'est à dire que les balises fermantes doivent êtres écrites dans l'ordre inverse des balises d'ouverture. Une bonne imbrication des balises est une des règles à respecter afin d'avoir un code valide.
+&lt;a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Introduction#Les_balises"&gt;Source MDN&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Voici un exemple de code valide :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;Ceci est &lt;span class="nt"&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;très&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt; important&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Voici un exemple de code non-valide :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;Ceci est &lt;span class="nt"&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;très&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt; important&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Le fichier commence par le doctype html &lt;code&gt;&amp;lt;!doctype html&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Les commentaires sont écrits &lt;code&gt;&amp;lt;!-- Ceci est un commentaire --&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;On écrit en général les balises en minuscules.&lt;/li&gt;
+&lt;li&gt;L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="structure-modele"&gt;Structure modèle&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un document minuscule&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Titre principal de mon document&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- Ceci est un commentaire --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Regarde maman, je suis en train de coder en &lt;span class="nt"&gt;&amp;lt;abbr&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hyper Text Markup Language&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;HTML&lt;span class="nt"&gt;&amp;lt;/abbr&amp;gt;&lt;/span&gt; !&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="validation-de-votre-page-web"&gt;Validation de votre page web&lt;/h1&gt;
+&lt;p&gt;Pour vérifier si votre code html est valide, et être informés sur les erreurs et recommandations, on peur utiliser le validateur du w3c disponible à l'adresse suivante:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://validator.w3.org/#validate_by_input+with_options"&gt;http://validator.w3.org/#validate_by_input+with_options&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vous pouvez même nettoyer votre code et le réindenter avec l'outil HTML-Tidy.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Tue, 04 Nov 2014 00:00:00 +0100</pubDate><guid>tag:benjaminabel.github.io,2014-11-04:icn/html/structure-dun-document-html/</guid><category>icn</category><category>html5</category><category>w3c</category></item></channel></rss>
