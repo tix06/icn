@@ -55,3 +55,18 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Mine
+*.*~
+cache/
+*.pyc
+_nb_header.html
+output/
+.ipynb_checkpoints/
+# Builders
+fabfile.py
+tasks.py
+makefile
+develop_server.sh
+launch-ipython.sh
+publishconf.py
