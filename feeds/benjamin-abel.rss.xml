@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ICN</title><link>http://benjaminabel.github.io/icn/</link><description></description><atom:link href="http://benjaminabel.github.io/icn/feeds/benjamin-abel.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 22 Apr 2015 00:00:00 +0200</lastBuildDate><item><title>Définition de l'épreuve d'icn au baccalauréat</title><link>http://benjaminabel.github.io/icn/officiel/definition-de-lepreuve-dicn-au-baccalaureat/</link><description>&lt;h1 id="structure-de-lepreuve"&gt;Structure de l'épreuve&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Durée : 20 minutes maximum&lt;/li&gt;
-&lt;li&gt;Coefficient : 2&lt;/li&gt;
-&lt;li&gt;Notée sur 20 points&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;À la date fixée par le professeur chargé de l'enseignement d'informatique et sciences du numérique, le candidat se présente à l'entretien muni de son dossier-projet.&lt;/p&gt;
-&lt;p&gt;Le dossier-projet de &lt;strong&gt;5 à 10 pages&lt;/strong&gt;, hors annexes, doit être élaboré à l'aide de l'outil informatique.&lt;/p&gt;
-&lt;p&gt;Ce projet est structuré de façon à mettre en évidence :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;le but visé et les moyens choisis pour atteindre ce but ;&lt;/li&gt;
-&lt;li&gt;la démarche de projet qui a conduit au résultat tel que présenté ;&lt;/li&gt;
-&lt;li&gt;la dimension collaborative du projet liée au travail en équipe (2 à 3 élèves).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;L'épreuve est composée de deux parties qui se déroulent consécutivement.&lt;/p&gt;
-&lt;h2 id="premiere-partie-evaluation-dun-projet-et-soutenance-orale"&gt;Première partie - Évaluation d'un projet et soutenance orale&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Durée : 8 minutes maximum&lt;/li&gt;
-&lt;li&gt;Notée sur 8 points&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Le candidat effectue une présentation orale de son projet, d'une durée maximale de 8 minutes, pendant laquelle il n'est pas interrompu. Il s'appuie pour cela sur son dossier-projet.&lt;/p&gt;
-&lt;h2 id="deuxieme-partie-dialogue-argumente-avec-la-commission-devaluation"&gt;Deuxième partie - Dialogue argumenté avec la commission d'évaluation&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Durée : 12 minutes minimum&lt;/li&gt;
-&lt;li&gt;Notée sur 12 points&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;La commission d'évaluation interroge le candidat sur différents aspects de son projet et sur son lien avec les compétences fixées par le programme, puis élargit ce questionnement aux autres compétences spécifiées dans le programme. &lt;/p&gt;
-&lt;p&gt;Cette interrogation a notamment pour but de vérifier que le candidat s'est approprié les notions fondamentales, sait les utiliser dans un contexte particulier ou les relier aux autres enseignements scientifiques spécifiques de la série.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57489"&gt;Source: Bulletin officiel spécial n°7 du 6 octobre 2011&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Wed, 22 Apr 2015 00:00:00 +0200</pubDate><guid>tag:benjaminabel.github.io,2015-04-22:icn/officiel/definition-de-lepreuve-dicn-au-baccalaureat/</guid><category>icn</category><category>programme</category><category>BO</category><category>BAC</category></item><item><title>Ajouter du dynamisme avec javascript</title><link>http://benjaminabel.github.io/icn/html/ajouter-du-dynamisme-avec-javascript/</link><description>&lt;p&gt;&lt;a title="Par Chris Williams [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AUnofficial_JavaScript_logo_2.svg"&gt;&lt;img width="256" alt="Unofficial JavaScript logo 2" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/256px-Unofficial_JavaScript_logo_2.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ICN</title><link>http://benjaminabel.github.io/icn/</link><description></description><atom:link href="http://benjaminabel.github.io/icn/feeds/benjamin-abel.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 19 Sep 2015 00:00:00 +0200</lastBuildDate><item><title>Programme de l'enseignement d'exploration ICN en seconde</title><link>http://benjaminabel.github.io/icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</link><description>&lt;p&gt;&lt;em&gt;Quelques&lt;/em&gt; éléments du programme qui peut-être retrouvé intégralement grâce au lien en bas de page.&lt;/p&gt;
+&lt;h1 id="preambule"&gt;Préambule&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;L'ambition de cet enseignement d'exploration est d'amener les élèves de seconde à comprendre que leurs pratiques numériques quotidiennes sont rendues possibles par une science informatique rigoureuse et qu'elles s'inscrivent à leur tour dans un réseau d'enjeux qui dépassent largement les apparences.&lt;/strong&gt; En somme, il s'agira de partir de l'expérience ordinaire du numérique d'un élève de seconde, pour explorer les couches scientifiques et techniques qui la rendent possible ainsi que les sphères sociales, commerciales et politiques où elle s'insère.&lt;/p&gt;
+&lt;p&gt;C'est pourquoi l'intitulé de cet enseignement conjoint les deux notions d'informatique et de numérique.&lt;/p&gt;
+&lt;p&gt;Quant à la notion de &lt;strong&gt;créatio&lt;/strong&gt;n, elle indique que cet enseignement devra se faire par le biais de projets et d'activités. Il ne s'agira donc pas de proposer un enseignement purement théorique, mais bien d'amener les élèves à explorer l'en-deçà et l'au-delà des apparences par une mise en activité. En-deçà : les machines, la numérisation de l'information, les algorithmes, les programmes, les logiciels, les réseaux ; au-delà : les usages personnels, sociaux, professionnels, scientifiques, politiques, idéologiques rendus possibles par le numérique, ainsi que les enjeux qui y sont liés.&lt;/p&gt;
+&lt;h1 id="les-objectifs"&gt;Les objectifs&lt;/h1&gt;
+&lt;p&gt;L’enseignement d’exploration « Informatique et création numérique » a le double objectif d’apporter aux élèves de seconde des connaissances et modes de raisonnement du domaine de la science informatique et de les conduire à un premier niveau d'analyse critique des enjeux industriels, économiques et sociétaux induits par le numérique. En interaction avec le parcours Avenir, les élèves sont amenés à prendre conscience de la diversité des champs d’activités dans lesquels le numérique occupe une place de plus en plus déterminante.&lt;/p&gt;
+&lt;h1 id="modalites-pedagogiques"&gt;Modalités pédagogiques&lt;/h1&gt;
+&lt;p&gt;Cet enseignement privilégie un apprentissage par la &lt;strong&gt;mise en activité&lt;/strong&gt; et en projet des élèves. Les activités proposées pourront prendre la forme de résolutions de problèmes avec ou sans ordinateur, ou de réalisation de produits (programmes, documents hypertextes, animations, images, sons, dispositifs techniques, etc.). Les élèves, seuls ou en petits groupes, explorent, essayent, proposent. Les enseignants peuvent accompagner les élèves à plusieurs niveaux : pour les aider à structurer, clarifier, simplifier, mais aussi leur apporter des éléments théoriques et méthodologiques nécessaires.&lt;/p&gt;
+&lt;p&gt;Les enseignants peuvent encourager les élèves à recourir, dans une démarche autonome, aux ressources disponibles à l'&lt;strong&gt;auto-formation&lt;/strong&gt; : tutoriels, e-learning, cours en ligne ouverts. Cela peut permettre de mettre en place des situations pédagogiques dans lesquelles les enseignants proposent des activités ciblées sur les problèmes de compréhension des élèves.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.education.gouv.fr/pid285/bulletin_officiel.html?cid_bo=91849"&gt;Source: Bulletin officiel Bulletin officiel n°31 du 27-08-2015&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Sat, 19 Sep 2015 00:00:00 +0200</pubDate><guid>tag:benjaminabel.github.io,2015-09-19:icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</guid><category>icn</category><category>programme</category><category>BO</category></item><item><title>Ajouter du dynamisme avec javascript</title><link>http://benjaminabel.github.io/icn/html/ajouter-du-dynamisme-avec-javascript/</link><description>&lt;p&gt;&lt;a title="Par Chris Williams [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AUnofficial_JavaScript_logo_2.svg"&gt;&lt;img width="256" alt="Unofficial JavaScript logo 2" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/256px-Unofficial_JavaScript_logo_2.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs. &amp;gt;Le langage a été créé en 1995 par Brendan Eich (Brendan Eich étant membre du conseil d'administration de la fondation Mozilla à cette époque) pour le compte de Netscape Communications Corporation. &lt;a href="http://fr.wikipedia.org/wiki/JavaScript"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -578,7 +560,7 @@ a = 4;  // Exception: redeclaration of const a
 
 
 &lt;p&gt;&lt;strong&gt;RENDU&lt;/strong&gt;
-&lt;img class="center" alt="Rendu de l'élément canvas" title="Rendu de l'élément canvas" src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png"&gt;&lt;/p&gt;
+&lt;img title="Rendu de l'élément canvas" alt="Rendu de l'élément canvas" class="center" src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png"&gt;&lt;/p&gt;
 &lt;p&gt;Essayez modifier certains des paramètres du code pour vous familiariser avec sa syntaxe, puis ajouter des éléments en utilisant cette page de référence de &lt;a href="http://www.w3schools.com/tags/ref_canvas.asp"&gt;w3schools&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="creer-des-animations"&gt;Créer des animations&lt;/h2&gt;
 &lt;p&gt;Pou animer un dessin canvas, nous allons utiliser la méthode &lt;code&gt;window.requestAnimationFrame()&lt;/code&gt;, cette méthode permet d'éxecuter une fonction à chaque affichage de la fenêtre du navigateur(soit environ 60 images/seconde).&lt;/p&gt;
