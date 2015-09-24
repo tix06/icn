@@ -78,7 +78,7 @@ Voici un exemple de code non-valide :
 <em>Ceci est <strong>très</em> important</strong>.
 ```
 
-# Structure minimale d'un fichier html
+# Structure d'un fichier html
 
 Le fichier doit commencer par le doctype html `<!doctype html>`
 
@@ -89,7 +89,7 @@ La balise `html` possède deux balises filles:
 - la balise `<head>` qui contient des informations telles que le titre ou l'encodage des caractères de la page qui ne sont pas affichées mais qui sont utiles au navigateur pour le rendu ou encore aux moteurs de recherche pour l'indexation de votre page.
 - la balise `<body>` qui contient l'ensemble du **code à afficher** lors du rendu.
 
-# Exemple de fichier `html` minimal
+## Exemple de fichier `html` minimal
 
 *L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.*
 
