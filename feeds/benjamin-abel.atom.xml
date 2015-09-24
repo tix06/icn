@@ -560,7 +560,7 @@ a = 4;  // Exception: redeclaration of const a
 
 
 &lt;p&gt;&lt;strong&gt;RENDU&lt;/strong&gt;
-&lt;img alt="Rendu de l'élément canvas" src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png" class="center" title="Rendu de l'élément canvas"&gt;&lt;/p&gt;
+&lt;img src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png" title="Rendu de l'élément canvas" class="center" alt="Rendu de l'élément canvas"&gt;&lt;/p&gt;
 &lt;p&gt;Essayez modifier certains des paramètres du code pour vous familiariser avec sa syntaxe, puis ajouter des éléments en utilisant cette page de référence de &lt;a href="http://www.w3schools.com/tags/ref_canvas.asp"&gt;w3schools&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="creer-des-animations"&gt;Créer des animations&lt;/h2&gt;
 &lt;p&gt;Pou animer un dessin canvas, nous allons utiliser la méthode &lt;code&gt;window.requestAnimationFrame()&lt;/code&gt;, cette méthode permet d'éxecuter une fonction à chaque affichage de la fenêtre du navigateur(soit environ 60 images/seconde).&lt;/p&gt;
