@@ -1,5 +1,6 @@
 Title:  Structure d'un document html
 date: 2014-11-04
+modified: 2015-09-24
 Chapitre: 1
 series:  Créer des pages web en html5
 series_index: 1
@@ -14,10 +15,10 @@ Tags: icn, html5, w3c
 Vous pouvez afficher le code html d'une page web, en cliquant droit sur celle-ci et en choisissant `Afficher le code source de la page`, ou en utilisant sur Mozilla le raccourci: <kbd>CTRL+U</kbd>.
 
 #Balises et attributs
+## Balises
+Le langage html utilise des balises pour indiquer le sens sémantique des éléments d'une page. Ces balises ou tags permettent de construire une hiérarchie au sein du document appelée DOM(Document Object Model)
 
-Le langage html utilise des balises pour indiquer le sens sémantique des éléments d'une page. Ces balises ou tags permettent de construire une hiérachie au sein du document appelée DOM(Document Object Model)
-
-Ces balises sont référencées sur le site [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+Ces balises sont référencées sur le site [MDN](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 
 *Par exemple:*
 
@@ -25,20 +26,42 @@ Ces balises sont référencées sur le site [MDN](https://developer.mozilla.org/
 
 - la balise de paragraphe `<p>...</p>`.
 
+- la balise d'ancre `<a>...</a>` permet de créer un lien hypertexte.
+
 - les balises `<div>...</div>` permettent d'englober plusieurs autres éléments, ce sont des conteneurs qui permettent de rassembler ensemble divers éléments.
 
 Certaines balises sont auto-fermantes c'est à dire qu'elles ne présentent pas de balises fermantes. Par exemple la balise d'image `<img>`.
 
-```
-<img src="mdn-logo-sm.png" alt="MD Logo" />
-```
+*Remarque: habituellement, on écrit les balises en minuscules.*
 
-Les élements `src` et `alt` sont les attributs de notre image.
+## Les attributs d'une balise
 
-- `src`: source de l'image, ici un fichier local, mais une adresse web peut-être sépecifiée.
+Les balises ouvrantes peuvent contenir des attributs permettant de préciser certains éléments relatifs au contenu de la balise.
+
+Par exemple, une balise d'ancre `<a>` doit obligatoirement spécifier l'attribut `href="..."` qui donne la cible du lien à viser lorsque l'utilisateur clique sur le texte de l'ancre.
+
+```
+<a href="https://duckduckgo.com/">Un moteur de recherche alternatif</a>
+```
+*s'affichera*
+
+<a href="https://duckduckgo.com/">Un moteur de recherche alternatif</a>
+
+
+Autre exemple, la balise `<img>` doit obligatoirement spécifier les attributs `src` et `alt` de notre image.
+
+- `src`: adresse de l'image.
 - `alt`: texte à afficher si la source ne peut-être trouvée.
 
-#Régles d'écriture
+```
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Mozilla_Aurora_icon.png" alt="Mozilla Aurora icon"/>
+```
+*s'affichera*
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Mozilla_Aurora_icon.png" alt="Mozilla Aurora icon"/>
+
+
+## Imbrications des balises
 
 > Les balises ouvrantes et fermantes doivent toujours être correctement imbriquées, c'est à dire que les balises fermantes doivent êtres écrites dans l'ordre inverse des balises d'ouverture. Une bonne imbrication des balises est une des règles à respecter afin d'avoir un code valide.
 [Source MDN](https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Introduction#Les_balises)
@@ -46,7 +69,7 @@ Les élements `src` et `alt` sont les attributs de notre image.
 Voici un exemple de code valide :
 
 ```
-<em>Ceci est <strong>très</strong> important</em>.
+<p>Ceci est <strong>très</strong> important</p>.
 ```
 
 Voici un exemple de code non-valide :
@@ -55,32 +78,45 @@ Voici un exemple de code non-valide :
 <em>Ceci est <strong>très</em> important</strong>.
 ```
 
-- Le fichier commence par le doctype html `<!doctype html>`
-- Les commentaires sont écrits `<!-- Ceci est un commentaire -->`
-- On écrit en général les balises en minuscules.
-- L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.
+# Structure minimale d'un fichier html
 
-#Structure modèle
+Le fichier doit commencer par le doctype html `<!doctype html>`
+
+L'ensemble du document est imbriqué à l'intérieur de balises `<html>`
+
+La balise `html` possède deux balises filles:
+
+- la balise `<head>` qui contient des informations telles que le titre ou l'encodage des caractères de la page qui ne sont pas affichées mais qui sont utiles au navigateur pour le rendu ou encore aux moteurs de recherche pour l'indexation de votre page.
+- la balise `<body>` qui contient l'ensemble du **code à afficher** lors du rendu.
+
+# Exemple de fichier `html` minimal
+
+*L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.*
 
 ```
 <!doctype html>
 <html lang="fr">
+
   <head>
     <meta charset="utf-8" />
     <title>Un document minuscule</title>
   </head>
+
   <body>
     <h1>Titre principal de mon document</h1>
     <!-- Ceci est un commentaire -->
     <p>Regarde maman, je suis en train de coder en <abbr title="Hyper Text Markup Language" lang="en">HTML</abbr> !</p>
   </body>
+
 </html>
 ```
 
-#Validation de votre page web
+# Validation et nettoyage de votre page web
 
-Pour vérifier si votre code html est valide, et être informés sur les erreurs et recommandations, on peur utiliser le validateur du w3c disponible à l'adresse suivante:
+Pour vérifier si votre code html est valide, et être informés sur les erreurs et recommandations, on peut utiliser le validateur html5 mis au point par la fondation mozilla:
 
-<http://validator.w3.org/#validate_by_input+with_options>
+<https://html5.validator.nu/>
 
-Vous pouvez même nettoyer votre code et le réindenter avec l'outil HTML-Tidy.
+Vous pouvez même nettoyer votre code et le réindenter avec l'outil en ligne suivant:
+
+<http://jsbeautifier.org/>
