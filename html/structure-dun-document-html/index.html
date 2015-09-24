@@ -133,8 +133,9 @@ Structure d'un document html
 </blockquote>
 <p>Vous pouvez afficher le code html d'une page web, en cliquant droit sur celle-ci et en choisissant <code>Afficher le code source de la page</code>, ou en utilisant sur Mozilla le raccourci: <kbd>CTRL+U</kbd>.</p>
 <h1 id="balises-et-attributs">Balises et attributs</h1>
-<p>Le langage html utilise des balises pour indiquer le sens sémantique des éléments d'une page. Ces balises ou tags permettent de construire une hiérachie au sein du document appelée DOM(Document Object Model)</p>
-<p>Ces balises sont référencées sur le site <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN</a></p>
+<h2 id="balises">Balises</h2>
+<p>Le langage html utilise des balises pour indiquer le sens sémantique des éléments d'une page. Ces balises ou tags permettent de construire une hiérarchie au sein du document appelée DOM(Document Object Model)</p>
+<p>Ces balises sont référencées sur le site <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element">MDN</a></p>
 <p><em>Par exemple:</em></p>
 <ul>
 <li>
@@ -144,26 +145,41 @@ Structure d'un document html
 <p>la balise de paragraphe <code>&lt;p&gt;...&lt;/p&gt;</code>.</p>
 </li>
 <li>
+<p>la balise d'ancre <code>&lt;a&gt;...&lt;/a&gt;</code> permet de créer un lien hypertexte.</p>
+</li>
+<li>
 <p>les balises <code>&lt;div&gt;...&lt;/div&gt;</code> permettent d'englober plusieurs autres éléments, ce sont des conteneurs qui permettent de rassembler ensemble divers éléments.</p>
 </li>
 </ul>
 <p>Certaines balises sont auto-fermantes c'est à dire qu'elles ne présentent pas de balises fermantes. Par exemple la balise d'image <code>&lt;img&gt;</code>.</p>
-<div class="highlight"><pre>&lt;img src=&quot;mdn-logo-sm.png&quot; alt=&quot;MD Logo&quot; /&gt;
+<p><em>Remarque: habituellement, on écrit les balises en minuscules.</em></p>
+<h2 id="les-attributs-dune-balise">Les attributs d'une balise</h2>
+<p>Les balises ouvrantes peuvent contenir des attributs permettant de préciser certains éléments relatifs au contenu de la balise.</p>
+<p>Par exemple, une balise d'ancre <code>&lt;a&gt;</code> doit obligatoirement spécifier l'attribut <code>href="..."</code> qui donne la cible du lien à viser lorsque l'utilisateur clique sur le texte de l'ancre.</p>
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://duckduckgo.com/&quot;</span><span class="nt">&gt;</span>Un moteur de recherche alternatif<span class="nt">&lt;/a&gt;</span>
 </pre></div>
 
 
-<p>Les élements <code>src</code> et <code>alt</code> sont les attributs de notre image.</p>
+<p><em>s'affichera</em></p>
+<p><a href="https://duckduckgo.com/">Un moteur de recherche alternatif</a></p>
+<p>Autre exemple, la balise <code>&lt;img&gt;</code> doit obligatoirement spécifier les attributs <code>src</code> et <code>alt</code> de notre image.</p>
 <ul>
-<li><code>src</code>: source de l'image, ici un fichier local, mais une adresse web peut-être sépecifiée.</li>
+<li><code>src</code>: adresse de l'image.</li>
 <li><code>alt</code>: texte à afficher si la source ne peut-être trouvée.</li>
 </ul>
-<h1 id="regles-decriture">Régles d'écriture</h1>
+<div class="highlight"><pre>&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/7/79/Mozilla_Aurora_icon.png&quot; alt=&quot;Mozilla Aurora icon&quot;/&gt;
+</pre></div>
+
+
+<p><em>s'affichera</em></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Mozilla_Aurora_icon.png" alt="Mozilla Aurora icon"/></p>
+<h2 id="imbrications-des-balises">Imbrications des balises</h2>
 <blockquote>
 <p>Les balises ouvrantes et fermantes doivent toujours être correctement imbriquées, c'est à dire que les balises fermantes doivent êtres écrites dans l'ordre inverse des balises d'ouverture. Une bonne imbrication des balises est une des règles à respecter afin d'avoir un code valide.
 <a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Introduction#Les_balises">Source MDN</a></p>
 </blockquote>
 <p>Voici un exemple de code valide :</p>
-<div class="highlight"><pre><span class="nt">&lt;em&gt;</span>Ceci est <span class="nt">&lt;strong&gt;</span>très<span class="nt">&lt;/strong&gt;</span> important<span class="nt">&lt;/em&gt;</span>.
+<div class="highlight"><pre><span class="nt">&lt;p&gt;</span>Ceci est <span class="nt">&lt;strong&gt;</span>très<span class="nt">&lt;/strong&gt;</span> important<span class="nt">&lt;/p&gt;</span>.
 </pre></div>
 
 
@@ -172,32 +188,39 @@ Structure d'un document html
 </pre></div>
 
 
+<h1 id="structure-minimale-dun-fichier-html">Structure minimale d'un fichier html</h1>
+<p>Le fichier doit commencer par le doctype html <code>&lt;!doctype html&gt;</code></p>
+<p>L'ensemble du document est imbriqué à l'intérieur de balises <code>&lt;html&gt;</code></p>
+<p>La balise <code>html</code> possède deux balises filles:</p>
 <ul>
-<li>Le fichier commence par le doctype html <code>&lt;!doctype html&gt;</code></li>
-<li>Les commentaires sont écrits <code>&lt;!-- Ceci est un commentaire --&gt;</code></li>
-<li>On écrit en général les balises en minuscules.</li>
-<li>L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.</li>
+<li>la balise <code>&lt;head&gt;</code> qui contient des informations telles que le titre ou l'encodage des caractères de la page qui ne sont pas affichées mais qui sont utiles au navigateur pour le rendu ou encore aux moteurs de recherche pour l'indexation de votre page.</li>
+<li>la balise <code>&lt;body&gt;</code> qui contient l'ensemble du <strong>code à afficher</strong> lors du rendu.</li>
 </ul>
-<h1 id="structure-modele">Structure modèle</h1>
+<h1 id="exemple-de-fichier-html-minimal">Exemple de fichier <code>html</code> minimal</h1>
+<p><em>L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.</em></p>
 <div class="highlight"><pre><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>
+
   <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;title&gt;</span>Un document minuscule<span class="nt">&lt;/title&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
+
   <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Titre principal de mon document<span class="nt">&lt;/h1&gt;</span>
     <span class="c">&lt;!-- Ceci est un commentaire --&gt;</span>
     <span class="nt">&lt;p&gt;</span>Regarde maman, je suis en train de coder en <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">&quot;Hyper Text Markup Language&quot;</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span> !<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
+
 <span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 
-<h1 id="validation-de-votre-page-web">Validation de votre page web</h1>
-<p>Pour vérifier si votre code html est valide, et être informés sur les erreurs et recommandations, on peur utiliser le validateur du w3c disponible à l'adresse suivante:</p>
-<p><a href="http://validator.w3.org/#validate_by_input+with_options">http://validator.w3.org/#validate_by_input+with_options</a></p>
-<p>Vous pouvez même nettoyer votre code et le réindenter avec l'outil HTML-Tidy.</p> <p class="subheader">Catégorie: <a href="http://benjaminabel.github.io/icn/category/html.html">HTML</a>
+<h1 id="validation-et-nettoyage-de-votre-page-web">Validation et nettoyage de votre page web</h1>
+<p>Pour vérifier si votre code html est valide, et être informés sur les erreurs et recommandations, on peut utiliser le validateur html5 mis au point par la fondation mozilla:</p>
+<p><a href="https://html5.validator.nu/">https://html5.validator.nu/</a></p>
+<p>Vous pouvez même nettoyer votre code et le réindenter avec l'outil en ligne suivant:</p>
+<p><a href="http://jsbeautifier.org/">http://jsbeautifier.org/</a></p> <p class="subheader">Catégorie: <a href="http://benjaminabel.github.io/icn/category/html.html">HTML</a>
 
     Mots-clés:
     <a href="http://benjaminabel.github.io/icn/tag/icn.html">icn </a>

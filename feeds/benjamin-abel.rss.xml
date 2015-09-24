@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ICN</title><link>http://benjaminabel.github.io/icn/</link><description></description><atom:link href="http://benjaminabel.github.io/icn/feeds/benjamin-abel.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 19 Sep 2015 00:00:00 +0200</lastBuildDate><item><title>Programme de l'enseignement d'exploration ICN en seconde</title><link>http://benjaminabel.github.io/icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</link><description>&lt;p&gt;&lt;em&gt;Quelques&lt;/em&gt; éléments du programme qui peut-être retrouvé intégralement grâce au lien en bas de page.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ICN</title><link>http://benjaminabel.github.io/icn/</link><description></description><atom:link href="http://benjaminabel.github.io/icn/feeds/benjamin-abel.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 24 Sep 2015 00:00:00 +0200</lastBuildDate><item><title>Programme de l'enseignement d'exploration ICN en seconde</title><link>http://benjaminabel.github.io/icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</link><description>&lt;p&gt;&lt;em&gt;Quelques&lt;/em&gt; éléments du programme qui peut-être retrouvé intégralement grâce au lien en bas de page.&lt;/p&gt;
 &lt;h1 id="preambule"&gt;Préambule&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;L'ambition de cet enseignement d'exploration est d'amener les élèves de seconde à comprendre que leurs pratiques numériques quotidiennes sont rendues possibles par une science informatique rigoureuse et qu'elles s'inscrivent à leur tour dans un réseau d'enjeux qui dépassent largement les apparences.&lt;/strong&gt; En somme, il s'agira de partir de l'expérience ordinaire du numérique d'un élève de seconde, pour explorer les couches scientifiques et techniques qui la rendent possible ainsi que les sphères sociales, commerciales et politiques où elle s'insère.&lt;/p&gt;
 &lt;p&gt;C'est pourquoi l'intitulé de cet enseignement conjoint les deux notions d'informatique et de numérique.&lt;/p&gt;
@@ -560,7 +560,7 @@ a = 4;  // Exception: redeclaration of const a
 
 
 &lt;p&gt;&lt;strong&gt;RENDU&lt;/strong&gt;
-&lt;img title="Rendu de l'élément canvas" alt="Rendu de l'élément canvas" class="center" src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png"&gt;&lt;/p&gt;
+&lt;img title="Rendu de l'élément canvas" class="center" src="http://benjaminabel.github.io/icn/images/HTML/canvas-smiley.png" alt="Rendu de l'élément canvas"&gt;&lt;/p&gt;
 &lt;p&gt;Essayez modifier certains des paramètres du code pour vous familiariser avec sa syntaxe, puis ajouter des éléments en utilisant cette page de référence de &lt;a href="http://www.w3schools.com/tags/ref_canvas.asp"&gt;w3schools&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="creer-des-animations"&gt;Créer des animations&lt;/h2&gt;
 &lt;p&gt;Pou animer un dessin canvas, nous allons utiliser la méthode &lt;code&gt;window.requestAnimationFrame()&lt;/code&gt;, cette méthode permet d'éxecuter une fonction à chaque affichage de la fenêtre du navigateur(soit environ 60 images/seconde).&lt;/p&gt;
@@ -754,8 +754,9 @@ myVideo.play();
 &lt;/blockquote&gt;
 &lt;p&gt;Vous pouvez afficher le code html d'une page web, en cliquant droit sur celle-ci et en choisissant &lt;code&gt;Afficher le code source de la page&lt;/code&gt;, ou en utilisant sur Mozilla le raccourci: &lt;kbd&gt;CTRL+U&lt;/kbd&gt;.&lt;/p&gt;
 &lt;h1 id="balises-et-attributs"&gt;Balises et attributs&lt;/h1&gt;
-&lt;p&gt;Le langage html utilise des balises pour indiquer le sens sémantique des éléments d'une page. Ces balises ou tags permettent de construire une hiérachie au sein du document appelée DOM(Document Object Model)&lt;/p&gt;
-&lt;p&gt;Ces balises sont référencées sur le site &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"&gt;MDN&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="balises"&gt;Balises&lt;/h2&gt;
+&lt;p&gt;Le langage html utilise des balises pour indiquer le sens sémantique des éléments d'une page. Ces balises ou tags permettent de construire une hiérarchie au sein du document appelée DOM(Document Object Model)&lt;/p&gt;
+&lt;p&gt;Ces balises sont référencées sur le site &lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element"&gt;MDN&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Par exemple:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -765,26 +766,41 @@ myVideo.play();
 &lt;p&gt;la balise de paragraphe &lt;code&gt;&amp;lt;p&amp;gt;...&amp;lt;/p&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;la balise d'ancre &lt;code&gt;&amp;lt;a&amp;gt;...&amp;lt;/a&amp;gt;&lt;/code&gt; permet de créer un lien hypertexte.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;les balises &lt;code&gt;&amp;lt;div&amp;gt;...&amp;lt;/div&amp;gt;&lt;/code&gt; permettent d'englober plusieurs autres éléments, ce sont des conteneurs qui permettent de rassembler ensemble divers éléments.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Certaines balises sont auto-fermantes c'est à dire qu'elles ne présentent pas de balises fermantes. Par exemple la balise d'image &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&amp;lt;img src=&amp;quot;mdn-logo-sm.png&amp;quot; alt=&amp;quot;MD Logo&amp;quot; /&amp;gt;
+&lt;p&gt;&lt;em&gt;Remarque: habituellement, on écrit les balises en minuscules.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="les-attributs-dune-balise"&gt;Les attributs d'une balise&lt;/h2&gt;
+&lt;p&gt;Les balises ouvrantes peuvent contenir des attributs permettant de préciser certains éléments relatifs au contenu de la balise.&lt;/p&gt;
+&lt;p&gt;Par exemple, une balise d'ancre &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; doit obligatoirement spécifier l'attribut &lt;code&gt;href="..."&lt;/code&gt; qui donne la cible du lien à viser lorsque l'utilisateur clique sur le texte de l'ancre.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;https://duckduckgo.com/&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Un moteur de recherche alternatif&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Les élements &lt;code&gt;src&lt;/code&gt; et &lt;code&gt;alt&lt;/code&gt; sont les attributs de notre image.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;s'affichera&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://duckduckgo.com/"&gt;Un moteur de recherche alternatif&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Autre exemple, la balise &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; doit obligatoirement spécifier les attributs &lt;code&gt;src&lt;/code&gt; et &lt;code&gt;alt&lt;/code&gt; de notre image.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;src&lt;/code&gt;: source de l'image, ici un fichier local, mais une adresse web peut-être sépecifiée.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;src&lt;/code&gt;: adresse de l'image.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;alt&lt;/code&gt;: texte à afficher si la source ne peut-être trouvée.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id="regles-decriture"&gt;Régles d'écriture&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;lt;img src=&amp;quot;https://upload.wikimedia.org/wikipedia/commons/7/79/Mozilla_Aurora_icon.png&amp;quot; alt=&amp;quot;Mozilla Aurora icon&amp;quot;/&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;s'affichera&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Mozilla_Aurora_icon.png" alt="Mozilla Aurora icon"/&gt;&lt;/p&gt;
+&lt;h2 id="imbrications-des-balises"&gt;Imbrications des balises&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Les balises ouvrantes et fermantes doivent toujours être correctement imbriquées, c'est à dire que les balises fermantes doivent êtres écrites dans l'ordre inverse des balises d'ouverture. Une bonne imbrication des balises est une des règles à respecter afin d'avoir un code valide.
 &lt;a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Introduction#Les_balises"&gt;Source MDN&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Voici un exemple de code valide :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;em&amp;gt;&lt;/span&gt;Ceci est &lt;span class="nt"&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;très&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt; important&lt;span class="nt"&gt;&amp;lt;/em&amp;gt;&lt;/span&gt;.
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Ceci est &lt;span class="nt"&gt;&amp;lt;strong&amp;gt;&lt;/span&gt;très&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt; important&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;.
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -793,29 +809,36 @@ myVideo.play();
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;h1 id="structure-minimale-dun-fichier-html"&gt;Structure minimale d'un fichier html&lt;/h1&gt;
+&lt;p&gt;Le fichier doit commencer par le doctype html &lt;code&gt;&amp;lt;!doctype html&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;L'ensemble du document est imbriqué à l'intérieur de balises &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;La balise &lt;code&gt;html&lt;/code&gt; possède deux balises filles:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Le fichier commence par le doctype html &lt;code&gt;&amp;lt;!doctype html&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Les commentaires sont écrits &lt;code&gt;&amp;lt;!-- Ceci est un commentaire --&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;On écrit en général les balises en minuscules.&lt;/li&gt;
-&lt;li&gt;L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.&lt;/li&gt;
+&lt;li&gt;la balise &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; qui contient des informations telles que le titre ou l'encodage des caractères de la page qui ne sont pas affichées mais qui sont utiles au navigateur pour le rendu ou encore aux moteurs de recherche pour l'indexation de votre page.&lt;/li&gt;
+&lt;li&gt;la balise &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; qui contient l'ensemble du &lt;strong&gt;code à afficher&lt;/strong&gt; lors du rendu.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id="structure-modele"&gt;Structure modèle&lt;/h1&gt;
+&lt;h1 id="exemple-de-fichier-html-minimal"&gt;Exemple de fichier &lt;code&gt;html&lt;/code&gt; minimal&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;L'indentation n'est pas obligatoire, mais elle rend le fichier plus lisible.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
   &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un document minuscule&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
   &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
   &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Titre principal de mon document&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
     &lt;span class="c"&gt;&amp;lt;!-- Ceci est un commentaire --&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Regarde maman, je suis en train de coder en &lt;span class="nt"&gt;&amp;lt;abbr&lt;/span&gt; &lt;span class="na"&gt;title=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hyper Text Markup Language&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;HTML&lt;span class="nt"&gt;&amp;lt;/abbr&amp;gt;&lt;/span&gt; !&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
   &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
 &lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1 id="validation-de-votre-page-web"&gt;Validation de votre page web&lt;/h1&gt;
-&lt;p&gt;Pour vérifier si votre code html est valide, et être informés sur les erreurs et recommandations, on peur utiliser le validateur du w3c disponible à l'adresse suivante:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://validator.w3.org/#validate_by_input+with_options"&gt;http://validator.w3.org/#validate_by_input+with_options&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Vous pouvez même nettoyer votre code et le réindenter avec l'outil HTML-Tidy.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Tue, 04 Nov 2014 00:00:00 +0100</pubDate><guid>tag:benjaminabel.github.io,2014-11-04:icn/html/structure-dun-document-html/</guid><category>icn</category><category>html5</category><category>w3c</category></item></channel></rss>
+&lt;h1 id="validation-et-nettoyage-de-votre-page-web"&gt;Validation et nettoyage de votre page web&lt;/h1&gt;
+&lt;p&gt;Pour vérifier si votre code html est valide, et être informés sur les erreurs et recommandations, on peut utiliser le validateur html5 mis au point par la fondation mozilla:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://html5.validator.nu/"&gt;https://html5.validator.nu/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vous pouvez même nettoyer votre code et le réindenter avec l'outil en ligne suivant:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://jsbeautifier.org/"&gt;http://jsbeautifier.org/&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Thu, 24 Sep 2015 00:00:00 +0200</pubDate><guid>tag:benjaminabel.github.io,2014-11-04:icn/html/structure-dun-document-html/</guid><category>icn</category><category>html5</category><category>w3c</category></item></channel></rss>
