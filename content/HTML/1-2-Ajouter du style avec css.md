@@ -1,9 +1,10 @@
 Title:  Ajouter du style avec css
 date: 2014-11-04
+modified: 2015-10-09
 Chapitre: 1
 series:  Créer des pages web en html5
 series_index: 2
-Tags: icn, html5, css
+Tags: icn, html5, css, w3c
 
 <a title="Par W3C (http://www.w3.org/html/logo/) [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AClass-header-css3.jpg"><img width="256" alt="Class-header-css3" src="//upload.wikimedia.org/wikipedia/commons/5/52/Class-header-css3.jpg"/></a>
 
@@ -22,7 +23,7 @@ p {
     text-align: center;
 }
 ```
-Cette règle permet de colorier en rouge et de centrer tous les paragraphes du document html.
+Cette règle permet de colorier en rouge et de centrer tous les balise `<p>` du document html.
 
 Il est possible de sélectionner plusieurs éléments en les séparant par des virgules.
 
@@ -93,9 +94,31 @@ Par ordre de priorité croissante:
 
   div p {background-color: red;}
 
-- Pour appliquer **un même style à plusieurs éléments** on peut leur ajouter un attribut html `class="class-name"`, qui pourra être sélectionné en css avec le sélecteur `.class-name`.
+- Pour appliquer *un même style à plusieurs éléments* on peut leur ajouter un attribut html `class="class-name"`, qui pourra être sélectionné en css avec le sélecteur `.class-name`.
 
-- Pour appliquer **un style specifique à un unique éléments** on lui ajoute un attribut html `id="id-name"`, qui pourra être sélectionné en css avec le sélecteur `#id-name`.
+**Code html**
+
+```
+<h2 class="souligne">Un titre de niveau 2 avec la classe souligne</h2>
+<p>Un paragraphe normal</p>
+<h2>Un titre de niveau 2 normal</h2>
+<p class="souligne">Un paragraphe avec la classe souligne</p>
+```
+
+**Code css**
+```
+.souligne {
+text-decoration: underline;
+}
+```
+
+**Rendu**
+<h2 style="text-decoration: underline;">Un titre de niveau 2 avec la classe souligne</h2>
+<p>Un paragraphe normal</p>
+<h2>Un titre de niveau 2 normal</h2>
+<p style="text-decoration: underline;">Un paragrapĥe avec la classe souligne</p>
+
+- Pour appliquer *un style specifique à un unique élément* on lui ajoute un attribut html `id="id-name"`, qui pourra être sélectionné en css avec le sélecteur `#id-name`.
 
 #Des styles plus élaborés
 ##Références des propriétés `css`
