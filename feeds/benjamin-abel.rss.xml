@@ -83,10 +83,10 @@
 &lt;li&gt;Pour appliquer &lt;em&gt;un même style à plusieurs éléments&lt;/em&gt; on peut leur ajouter un attribut html &lt;code&gt;class="class-name"&lt;/code&gt;, qui pourra être sélectionné en css avec le sélecteur &lt;code&gt;.class-name&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Code html&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;h1&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;souligne&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Un titre de niveau 1 avec la classe souligne&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;h2&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;souligne&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Un titre de niveau 2 avec la classe souligne&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Un paragraphe normal&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Un titre de niveau 1 normal&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;souligne&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Un paragrapĥe avec la classe souligne&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Un titre de niveau 2 normal&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;souligne&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Un paragraphe avec la classe souligne&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -98,9 +98,9 @@
 
 
 &lt;p&gt;&lt;strong&gt;Rendu&lt;/strong&gt;
-&lt;h1 style="text-decoration: underline;"&gt;Un titre de niveau 1 avec la classe souligne&lt;/h1&gt;
+&lt;h2 style="text-decoration: underline;"&gt;Un titre de niveau 2 avec la classe souligne&lt;/h2&gt;
 &lt;p&gt;Un paragraphe normal&lt;/p&gt;
-&lt;h1&gt;Un titre de niveau 1 normal&lt;/h1&gt;
+&lt;h2&gt;Un titre de niveau 2 normal&lt;/h2&gt;
 &lt;p style="text-decoration: underline;"&gt;Un paragrapĥe avec la classe souligne&lt;/p&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Pour appliquer &lt;em&gt;un style specifique à un unique élément&lt;/em&gt; on lui ajoute un attribut html &lt;code&gt;id="id-name"&lt;/code&gt;, qui pourra être sélectionné en css avec le sélecteur &lt;code&gt;#id-name&lt;/code&gt;.&lt;/li&gt;
