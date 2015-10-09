@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ICN</title><link>http://benjaminabel.github.io/icn/</link><description></description><atom:link href="http://benjaminabel.github.io/icn/feeds/benjamin-abel.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 24 Sep 2015 00:00:00 +0200</lastBuildDate><item><title>Programme de l'enseignement d'exploration ICN en seconde</title><link>http://benjaminabel.github.io/icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</link><description>&lt;p&gt;&lt;em&gt;Quelques&lt;/em&gt; éléments du programme qui peut-être retrouvé intégralement grâce au lien en bas de page.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ICN</title><link>http://benjaminabel.github.io/icn/</link><description></description><atom:link href="http://benjaminabel.github.io/icn/feeds/benjamin-abel.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 09 Oct 2015 00:00:00 +0200</lastBuildDate><item><title>Programme de l'enseignement d'exploration ICN en seconde</title><link>http://benjaminabel.github.io/icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</link><description>&lt;p&gt;&lt;em&gt;Quelques&lt;/em&gt; éléments du programme qui peut-être retrouvé intégralement grâce au lien en bas de page.&lt;/p&gt;
 &lt;h1 id="preambule"&gt;Préambule&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;L'ambition de cet enseignement d'exploration est d'amener les élèves de seconde à comprendre que leurs pratiques numériques quotidiennes sont rendues possibles par une science informatique rigoureuse et qu'elles s'inscrivent à leur tour dans un réseau d'enjeux qui dépassent largement les apparences.&lt;/strong&gt; En somme, il s'agira de partir de l'expérience ordinaire du numérique d'un élève de seconde, pour explorer les couches scientifiques et techniques qui la rendent possible ainsi que les sphères sociales, commerciales et politiques où elle s'insère.&lt;/p&gt;
 &lt;p&gt;C'est pourquoi l'intitulé de cet enseignement conjoint les deux notions d'informatique et de numérique.&lt;/p&gt;
@@ -9,7 +9,120 @@
 &lt;h1 id="modalites-pedagogiques"&gt;Modalités pédagogiques&lt;/h1&gt;
 &lt;p&gt;Cet enseignement privilégie un apprentissage par la &lt;strong&gt;mise en activité&lt;/strong&gt; et en projet des élèves. Les activités proposées pourront prendre la forme de résolutions de problèmes avec ou sans ordinateur, ou de réalisation de produits (programmes, documents hypertextes, animations, images, sons, dispositifs techniques, etc.). Les élèves, seuls ou en petits groupes, explorent, essayent, proposent. Les enseignants peuvent accompagner les élèves à plusieurs niveaux : pour les aider à structurer, clarifier, simplifier, mais aussi leur apporter des éléments théoriques et méthodologiques nécessaires.&lt;/p&gt;
 &lt;p&gt;Les enseignants peuvent encourager les élèves à recourir, dans une démarche autonome, aux ressources disponibles à l'&lt;strong&gt;auto-formation&lt;/strong&gt; : tutoriels, e-learning, cours en ligne ouverts. Cela peut permettre de mettre en place des situations pédagogiques dans lesquelles les enseignants proposent des activités ciblées sur les problèmes de compréhension des élèves.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.education.gouv.fr/pid285/bulletin_officiel.html?cid_bo=91849"&gt;Source: Bulletin officiel Bulletin officiel n°31 du 27-08-2015&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Sat, 19 Sep 2015 00:00:00 +0200</pubDate><guid>tag:benjaminabel.github.io,2015-09-19:icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</guid><category>icn</category><category>programme</category><category>BO</category></item><item><title>Structure d'un document html</title><link>http://benjaminabel.github.io/icn/html/structure-dun-document-html/</link><description>&lt;p&gt;&lt;a title="W3C [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AHTML5_logo_and_wordmark.svg"&gt;&lt;img width="256" alt="HTML5 logo and wordmark" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/256px-HTML5_logo_and_wordmark.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.education.gouv.fr/pid285/bulletin_officiel.html?cid_bo=91849"&gt;Source: Bulletin officiel Bulletin officiel n°31 du 27-08-2015&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Sat, 19 Sep 2015 00:00:00 +0200</pubDate><guid>tag:benjaminabel.github.io,2015-09-19:icn/officiel/programme-de-lenseignement-dexploration-icn-en-seconde/</guid><category>icn</category><category>programme</category><category>BO</category></item><item><title>Ajouter du style avec css</title><link>http://benjaminabel.github.io/icn/html/ajouter-du-style-avec-css/</link><description>&lt;p&gt;&lt;a title="Par W3C (http://www.w3.org/html/logo/) [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AClass-header-css3.jpg"&gt;&lt;img width="256" alt="Class-header-css3" src="//upload.wikimedia.org/wikipedia/commons/5/52/Class-header-css3.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000. &lt;a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="syntaxe"&gt;Syntaxe&lt;/h1&gt;
+&lt;p&gt;Une règle css est constituée d'un sélecteur suivi d'un bloc de déclaration entre accolades. Chaque déclaration se termine par un point-virgule.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;exemple&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Cette règle permet de colorier en rouge et de centrer tous les balise &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; du document html.&lt;/p&gt;
+&lt;p&gt;Il est possible de sélectionner plusieurs éléments en les séparant par des virgules.&lt;/p&gt;
+&lt;p&gt;Les commentaires utilisent la syntaxe suivante: &lt;code&gt;/* Un commentaire */&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="integration-de-code-css-dans-une-page-html"&gt;Intégration de code css dans une page html&lt;/h1&gt;
+&lt;p&gt;Il existe trois façons d'insérer une feuille de style au sein d'un document html:&lt;/p&gt;
+&lt;h2 id="insertion-directe-dans-les-balises-html"&gt;Insertion directe dans les balises html&lt;/h2&gt;
+&lt;p&gt;On utilise alors l'attribut style au sein de la balise ouvrante de l'élément à styler.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nt"&gt;&amp;lt;h1&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;color:blue; margin-left:30px;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;This is a heading.&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Cette méthode est peu recommandée en raison du but même la définition des langages html et css qui est de séparer le fond et la forme.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="utilisation-dune-feuille-de-style-interne"&gt;Utilisation d'une feuille de style interne&lt;/h2&gt;
+&lt;p&gt;On intègre le code css au sein de balises &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; dans l'entête du document(le &lt;head&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+        body {
+        background-color: linen;
+        }
+    h1 {
+        color: maroon;
+        margin-left: 40px;
+        }
+    &lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Méthode pratique lorsque l'on a des documents html d'une seule page ou avec des styles spécifiques.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="utilisation-dune-feuille-de-style-externe"&gt;Utilisation d'une feuille de style externe&lt;/h2&gt;
+&lt;p&gt;on écrit le code css dans un fichier avec l'extension &lt;code&gt;.css&lt;/code&gt; et on l'appelle dans l'entête du document(le &lt;head&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;link&lt;/span&gt; &lt;span class="na"&gt;rel=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mystyle.css&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;C'est la méthode préférée lorsque l'on a un ensemble de pages qui contiennent des styles identiques, cela permet d'alléger l'écriture du code et les requêtes vers le serveur de documents.&lt;/p&gt;
+&lt;h1 id="ordre-dapplication-des-regles"&gt;Ordre d'application des règles&lt;/h1&gt;
+&lt;p&gt;Ce n'est pas pour rien qu'on parle de feuilles de styles en cascade, car en fait la difficulté en css est souvent que l'on définit des règles différentes pour des tags identiques, et qu'il faut savoir qu'elle règle va s'appliquer sur notre élément.&lt;/p&gt;
+&lt;p&gt;Par ordre de priorité croissante:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Règles par défaut du navigateur&lt;/li&gt;
+&lt;li&gt;Feuille de style externe&lt;/li&gt;
+&lt;li&gt;Feuille de style interne&lt;/li&gt;
+&lt;li&gt;Style au sein d'un élément html.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="selecteurs-plus-elabores"&gt;Sélecteurs plus élaborés&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Il est possible de sélectionner &lt;strong&gt;plusieurs balises&lt;/strong&gt; à la fois pour leur appliquer une règle commune, ces balises doivent alors être séparées par des &lt;em&gt;virgules&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;h1, h2, h3 {color: lime;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La virgule est très importante, car si on sépare les sélecteurs par des &lt;em&gt;espaces&lt;/em&gt; il s'agit d'une &lt;strong&gt;sélection par descendence&lt;/strong&gt;, le code css suivant par exemple ne sélectionne que les paragraphes contenus dans une balise &lt;code&gt;div&lt;/code&gt;(&lt;a href="https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_descendant"&gt;voir mdn pour plus de détails&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;div p {background-color: red;}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour appliquer &lt;em&gt;un même style à plusieurs éléments&lt;/em&gt; on peut leur ajouter un attribut html &lt;code&gt;class="class-name"&lt;/code&gt;, qui pourra être sélectionné en css avec le sélecteur &lt;code&gt;.class-name&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Code html&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;h1&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;souligne&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Un titre de niveau 1 avec la classe souligne&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Un paragraphe normal&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Un titre de niveau 1 normal&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;souligne&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Un paragrapĥe avec la classe souligne&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Code css&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="na"&gt;.souligne&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+&lt;span class="nl"&gt;text-decoration:&lt;/span&gt; &lt;span class="nf"&gt;underline&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Rendu&lt;/strong&gt;
+&lt;h1 style="text-decoration: underline;"&gt;Un titre de niveau 1 avec la classe souligne&lt;/h1&gt;
+&lt;p&gt;Un paragraphe normal&lt;/p&gt;
+&lt;h1&gt;Un titre de niveau 1 normal&lt;/h1&gt;
+&lt;p style="text-decoration: underline;"&gt;Un paragrapĥe avec la classe souligne&lt;/p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour appliquer &lt;em&gt;un style specifique à un unique élément&lt;/em&gt; on lui ajoute un attribut html &lt;code&gt;id="id-name"&lt;/code&gt;, qui pourra être sélectionné en css avec le sélecteur &lt;code&gt;#id-name&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="des-styles-plus-elabores"&gt;Des styles plus élaborés&lt;/h1&gt;
+&lt;h2 id="references-des-proprietes-css"&gt;Références des propriétés &lt;code&gt;css&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Cette référence CSS sur &lt;a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference"&gt;MDN&lt;/a&gt; liste toutes les propriétés standards CSS.&lt;/p&gt;
+&lt;h2 id="tutoriels-et-exemples-en-ligne"&gt;Tutoriels et exemples en ligne&lt;/h2&gt;
+&lt;p&gt;Le site &lt;a href="http://www.w3schools.com/css/css_examples.asp"&gt;w3cschools&lt;/a&gt; présente des exemples éditables et dynamiques de situations courantes lors du stylage d'une page web, voir notamment les pages suivantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_background.asp"&gt;CSS Backgrounds&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_backgrounds.asp"&gt;CSS3 Backgrounds&lt;/a&gt; pour les &lt;strong&gt;arrières plans&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_text.asp"&gt;CSS Text&lt;/a&gt;, &lt;a href="http://www.w3schools.com/css/css_font.asp"&gt;CSS Fonts&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_fonts.asp"&gt;CSS3 Fonts&lt;/a&gt; pour la &lt;strong&gt;mise en forme du texte&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_list.asp"&gt;CSS Lists&lt;/a&gt; pour les &lt;strong&gt;listes&lt;/strong&gt; numérotées on non.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css_boxmodel.asp"&gt;CSS Box Model&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_borders.asp"&gt;CSS3 Borders&lt;/a&gt; pour les modèles de &lt;strong&gt;boîtes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.w3schools.com/css/css3_transitions.asp"&gt;CSS3 Transitions&lt;/a&gt; et &lt;a href="http://www.w3schools.com/css/css3_animations.asp"&gt;CSS3 Animations&lt;/a&gt; pour des effets &lt;strong&gt;dynamiques&lt;/strong&gt; sur vos pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="deboguer-son-code-css"&gt;Déboguer son code css&lt;/h1&gt;
+&lt;h2 id="inspecteur-de-styles-du-navigateur"&gt;Inspecteur de styles du navigateur&lt;/h2&gt;
+&lt;p&gt;Pour savoir qu'elle règle a été utilisée par le navigateur, la console web du navigateur est d'un grand secours. On peut par exemple inspecter un élément et savoir qu'elles règles css s'appliquent et qu'elles règles css ont été suplantés.&lt;/p&gt;
+&lt;p&gt;Pour accéder à la console web, taper &lt;kbd&gt;CTRL+MAJ+K&lt;/kbd&gt; sur firefox, pour inspecter un élément il suffit de le sélectionner et de faire un click droit de la souris puis de taper &lt;kbd&gt;x&lt;/kbd&gt;.&lt;/p&gt;
+&lt;h2 id="validateur-du-w3c"&gt;Validateur du w3c&lt;/h2&gt;
+&lt;p&gt;Le site du w3c propose comme pour le language html un (validateur)[http://jigsaw.w3.org/css-validator/#validate_by_input+with_options] de fichier css:&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Benjamin Abel</dc:creator><pubDate>Fri, 09 Oct 2015 00:00:00 +0200</pubDate><guid>tag:benjaminabel.github.io,2014-11-04:icn/html/ajouter-du-style-avec-css/</guid><category>icn</category><category>html5</category><category>css</category><category>w3c</category></item><item><title>Structure d'un document html</title><link>http://benjaminabel.github.io/icn/html/structure-dun-document-html/</link><description>&lt;p&gt;&lt;a title="W3C [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AHTML5_logo_and_wordmark.svg"&gt;&lt;img width="256" alt="HTML5 logo and wordmark" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/256px-HTML5_logo_and_wordmark.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;HTML5 (HyperText Markup Language 5) est la dernière révision majeure d'HTML (format de données conçu pour représenter les pages web).&lt;/p&gt;
 &lt;p&gt;Dans le langage courant, HTML5 désigne souvent un ensemble de technologies Web (HTML5, CSS3 et JavaScript) permettant notamment le développement d'applications (cf. DHTML). &lt;a href="https://fr.wikipedia.org/wiki/HTML5"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
