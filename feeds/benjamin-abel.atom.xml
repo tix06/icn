@@ -9,7 +9,279 @@
 &lt;h1 id="modalites-pedagogiques"&gt;Modalités pédagogiques&lt;/h1&gt;
 &lt;p&gt;Cet enseignement privilégie un apprentissage par la &lt;strong&gt;mise en activité&lt;/strong&gt; et en projet des élèves. Les activités proposées pourront prendre la forme de résolutions de problèmes avec ou sans ordinateur, ou de réalisation de produits (programmes, documents hypertextes, animations, images, sons, dispositifs techniques, etc.). Les élèves, seuls ou en petits groupes, explorent, essayent, proposent. Les enseignants peuvent accompagner les élèves à plusieurs niveaux : pour les aider à structurer, clarifier, simplifier, mais aussi leur apporter des éléments théoriques et méthodologiques nécessaires.&lt;/p&gt;
 &lt;p&gt;Les enseignants peuvent encourager les élèves à recourir, dans une démarche autonome, aux ressources disponibles à l'&lt;strong&gt;auto-formation&lt;/strong&gt; : tutoriels, e-learning, cours en ligne ouverts. Cela peut permettre de mettre en place des situations pédagogiques dans lesquelles les enseignants proposent des activités ciblées sur les problèmes de compréhension des élèves.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.education.gouv.fr/pid285/bulletin_officiel.html?cid_bo=91849"&gt;Source: Bulletin officiel Bulletin officiel n°31 du 27-08-2015&lt;/a&gt;&lt;/p&gt;</summary><category term="icn"></category><category term="programme"></category><category term="BO"></category></entry><entry><title>Ajouter du style avec css</title><link href="http://benjaminabel.github.io/icn/html/ajouter-du-style-avec-css/" rel="alternate"></link><updated>2015-10-09T00:00:00+02:00</updated><author><name>Benjamin Abel</name></author><id>tag:benjaminabel.github.io,2014-11-04:icn/html/ajouter-du-style-avec-css/</id><summary type="html">&lt;p&gt;&lt;a title="Par W3C (http://www.w3.org/html/logo/) [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AClass-header-css3.jpg"&gt;&lt;img width="256" alt="Class-header-css3" src="//upload.wikimedia.org/wikipedia/commons/5/52/Class-header-css3.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.education.gouv.fr/pid285/bulletin_officiel.html?cid_bo=91849"&gt;Source: Bulletin officiel Bulletin officiel n°31 du 27-08-2015&lt;/a&gt;&lt;/p&gt;</summary><category term="icn"></category><category term="programme"></category><category term="BO"></category></entry><entry><title>Ajouter du dynamisme avec javascript</title><link href="http://benjaminabel.github.io/icn/html/ajouter-du-dynamisme-avec-javascript/" rel="alternate"></link><updated>2014-11-04T00:00:00+01:00</updated><author><name>Benjamin Abel</name></author><id>tag:benjaminabel.github.io,2014-11-04:icn/html/ajouter-du-dynamisme-avec-javascript/</id><summary type="html">&lt;p&gt;&lt;a title="Par Chris Williams [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AUnofficial_JavaScript_logo_2.svg"&gt;&lt;img width="256" alt="Unofficial JavaScript logo 2" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/256px-Unofficial_JavaScript_logo_2.svg.png"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs. &amp;gt;Le langage a été créé en 1995 par Brendan Eich (Brendan Eich étant membre du conseil d'administration de la fondation Mozilla à cette époque) pour le compte de Netscape Communications Corporation. &lt;a href="http://fr.wikipedia.org/wiki/JavaScript"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Attention à ne pas confondre le javascript et le java&lt;/strong&gt;, ce sont des langages différents.&lt;/p&gt;
+&lt;h1 id="integration-de-code-javascript-dans-une-page-html"&gt;Intégration de code &lt;code&gt;javascript&lt;/code&gt; dans une page html&lt;/h1&gt;
+&lt;p&gt;Le code javascript peut être intégré directement grâce à la balise html &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;, soit dans écrit directement dans l'en-tête du document(&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;), soit en utilisant un fichier séparé avec l'extension &lt;code&gt;.js&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="directement-dans-la-page-html"&gt;Directement dans la page html&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un peu de javascript&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+          // Alert crée une fenêtre d&amp;#39;affichage sur l&amp;#39;écran pour l&amp;#39;utilisateur
+          alert(&amp;quot;Hello world !&amp;quot;);
+          // console.log() écrit dans la console du navigateur pour le développeur
+          console.log(&amp;quot;Script Hello world exécuté.&amp;quot;)
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Titre principal de mon document&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Regarde maman, je suis en train d&amp;#39;ajouter du code javascript à ma page.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="dans-un-fichier-scriptjs-separe"&gt;Dans un fichier &lt;code&gt;script.js&lt;/code&gt; séparé&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un document minuscule&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;script.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Titre principal de mon document&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Regarde maman, je suis en train d&amp;#39;ajouter du code javascript à ma page.&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="tester-et-debugger-le-code-javascript"&gt;Tester et debugger le code javascript&lt;/h2&gt;
+&lt;h3 id="console-du-navigateur"&gt;Console du navigateur&lt;/h3&gt;
+&lt;p&gt;Lorsqu'on désire débugguer un programme javascript, la solution la plus simple est d'utiliser la fonction &lt;code&gt;console.log()&lt;/code&gt;, pour afficher des variables dans la &lt;strong&gt;console&lt;/strong&gt; du navigateur non affichée par défaut, mais accessible par le raccourci &lt;kbd&gt;CTRL+MAJ+K&lt;/kbd&gt; sur Firefox. &lt;em&gt;(Sinon, vous pouvez aussi y accéder par le menu de &lt;code&gt;Développement web&lt;/code&gt;.)&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="ardoise-javascript"&gt;Ardoise javascript&lt;/h3&gt;
+&lt;p&gt;La plupart de navigateurs dispose d'une console pour entrer du code javascript afin de réaliser des tests. Dans le cas de firefox, on la lance avec le raccourci &lt;kbd&gt;MAJ+F4&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;L'éxecution du code javascript s'effectue en appuyant sur le bouton &lt;code&gt;Exécuter&lt;/code&gt; (ou le raccourci clavier &lt;kbd&gt;CTRL+R&lt;/kbd&gt;)&lt;/p&gt;
+&lt;h1 id="syntaxe-du-javascript"&gt;Syntaxe du javascript&lt;/h1&gt;
+&lt;p&gt;Il s'agit d'un langage très complet, qui ne peut pas être expliqué en quelques lignes, pour une référence plus complète, voir l'article Wikipedia &lt;a href="http://fr.wikipedia.org/wiki/Syntaxe_JavaScript"&gt;Syntaxe javascript&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les &lt;strong&gt;commentaires&lt;/strong&gt; sont notés précédés de deux barres obliques: &lt;code&gt;//&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Les instructions simples sont terminées par un &lt;strong&gt;point-virgule&lt;/strong&gt;: &lt;code&gt;;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;L'&lt;strong&gt;indentation&lt;/strong&gt; des blocs d'instruction n'est pas obligatoire, mais souhaitable.&lt;/li&gt;
+&lt;li&gt;Les blocs d'instructions sont entourés d'accolades.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;if (expression1)
+ {
+   //instructions réalisées si expression1 est vraie;
+ }
+ else
+ {
+   //instructions réalisées dans les autres cas;
+ }
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="variables-javascript"&gt;Variables javascript&lt;/h1&gt;
+&lt;p&gt;Les variables n'ont pas de type défini, on parle de typage dynamique comme en python. Il est possible de modifier le type de donnée contenue dans une variable.&lt;/p&gt;
+&lt;p&gt;Coller le code suivant dans l'ardoise javascript pour l'éxecuter et l'éxaminer.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;myString&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;123.456&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt; &lt;span class="nt"&gt;permet&lt;/span&gt; &lt;span class="nt"&gt;d&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;afficher la valeur dans la console web&lt;/span&gt;
+&lt;span class="s1"&gt;console.log(myString);&lt;/span&gt;
+
+&lt;span class="s1"&gt;// On peut directement inspecter une ligne directement&lt;/span&gt;
+&lt;span class="s1"&gt;// en la sélectionnant puis Examiner (CTRL+I)&lt;/span&gt;
+&lt;span class="s1"&gt;typeof(myString); // value:string&lt;/span&gt;
+
+&lt;span class="s1"&gt;// Ou un beau console.log pour garder des traces de l&amp;#39;&lt;/span&gt;&lt;span class="nt"&gt;éxecution&lt;/span&gt; &lt;span class="nt"&gt;du&lt;/span&gt; &lt;span class="nt"&gt;programme&lt;/span&gt;
+&lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;myString est actuellement du type:&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;typeof&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;);&lt;/span&gt;
+
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;Illustration&lt;/span&gt; &lt;span class="nt"&gt;du&lt;/span&gt; &lt;span class="nt"&gt;typage&lt;/span&gt; &lt;span class="nt"&gt;dynamique&lt;/span&gt;
+&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;myString&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;Number&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;typeof&lt;/span&gt; &lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="nt"&gt;value&lt;/span&gt;&lt;span class="nd"&gt;:number&lt;/span&gt;
+&lt;span class="nt"&gt;console&lt;/span&gt;&lt;span class="nc"&gt;.log&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;myString est actuellement du type:&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nt"&gt;typeof&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;myString&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Il est vivement conseillé de déclarer ses variables avec l'instruction &lt;code&gt;var&lt;/code&gt; pour des questions de portée de variable.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Remarque&lt;/em&gt; le javascript définit aussi des &lt;strong&gt;constantes&lt;/strong&gt; avec l'instruction &lt;code&gt;const&lt;/code&gt; qui comme son nom l'indique ne peut pas changer de valeur grâce à une assignation ou être re-déclarée au cours du programme contrairement à une variable.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;// Réassignation possible avec les variables
+var c = 6;
+console.log(c); // donne 6
+c = 4;
+console.log(c); // donne 4
+
+// Réassignation impossible avec les constantes
+const a = 5;
+a = 4;  // Exception: redeclaration of const a
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="fonctions-javascript"&gt;Fonctions javascript&lt;/h1&gt;
+&lt;p&gt;Une fonction est déclarée de la façon suivante en javascript:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;nomDeMaFonction&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;argument1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;argument2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;...)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;instructions&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;valeur_renvoyée_par_ma&lt;/span&gt; &lt;span class="nx"&gt;fonction&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Exemple&lt;/strong&gt;: la fonction carré&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// Déclaration de la fonction&lt;/span&gt;
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;carré&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;nombre&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;nombre&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;nombre&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Appel de la fonction&lt;/span&gt;
+
+&lt;span class="nx"&gt;carré&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// retourne 4!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt;: Lorsqu'on déclare une variable dans une fonction, celle-ci a une portée locale et ne peut pas être utilisée en dehors de la fonction.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// n ici une variable locale dans la fonction&lt;/span&gt;
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;quatreFois&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;nombre&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;nombre&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Elle n&amp;#39;existe pas en dehors de la fonction&lt;/span&gt;
+&lt;span class="nx"&gt;quatreFois&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="c1"&gt;// retourne 8!&lt;/span&gt;
+&lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// Exception: n is not defined&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="modifier-dynamiquement-une-page-html-grace-a-javascript"&gt;Modifier dynamiquement une page html grâce à javascript&lt;/h1&gt;
+&lt;h2 id="execution-differee"&gt;Execution différée&lt;/h2&gt;
+&lt;p&gt;Il convient d'attendre que la page html soit chargée avant d'éxecuter le code javascript. De nombreux développeurs placent le code javascript à la fin du corps du document avant la balise fermante &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Cependant il est aussi possible de lancer le code javascript qu'après le chargement de la fenêtre en placant le code dans une fonction anonyme s'executant après le chargement de la page.&lt;em&gt;(Vous allez voir, en javascript, les fonctions sont très présentes)&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="c1"&gt;// code javascript à éxecuter&lt;/span&gt;
+  &lt;span class="c1"&gt;// après le chargement de la page&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="acceder-a-un-element-html"&gt;Accéder à un élément html&lt;/h2&gt;
+&lt;p&gt;La méthode &lt;code&gt;document.getElementById()&lt;/code&gt; permet de sélectionner un élément html à partir de son &lt;code&gt;id&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On peut alors modifier son contenu grâce à la propriété &lt;code&gt;innerHTML&lt;/code&gt;,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;document.getElementById(&amp;quot;this-id&amp;quot;).innerHTML = &amp;quot;New text!&amp;quot;;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ou encore modifier son style grâce à la prpriété &lt;code&gt;style&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;document.getElementById(&amp;quot;this-id&amp;quot;).style.color = &amp;quot;##FFAA85&amp;quot;;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Exemple de code permettant d'afficher l'heure à laquelle vous avez ouvert la page.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un peu de javascript&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            window.onload = function() {
+                    // Stocke l&amp;#39;heure dans la vaariable d
+                    var d = new Date();
+                    // Ajoute cette heure dans l&amp;#39;élément html ayant pour id heure
+                    document.getElementById(&amp;quot;heure&amp;quot;).innerHTML = d.toLocaleTimeString();
+
+                }
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Javascript en action&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Page ouverte à: &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;heure&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Encore mieux afficher l'heure actuelle en éxecutant l'affichage toutes les mille millisecondes&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;!doctype html&amp;gt;
+&lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un peu de javascript&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            window.onload = function() {
+                function myTimer() {
+                    var d = new Date();
+                    document.getElementById(&amp;quot;heure&amp;quot;).innerHTML = d.toLocaleTimeString();
+
+                }
+
+                setInterval(function() {
+                        myTimer()
+                    }, 1000);
+            }
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Javascript en action&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Il est: &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;heure&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="controler-des-evenements"&gt;Contrôler des événements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On peut éxecuter du javascript lorsqu'on &lt;strong&gt;presse un bouton&lt;/strong&gt; avec  l'attribut &lt;code&gt;onclick&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;h1&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;id1&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Mon titre de niveau 1&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;button&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;onclick=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;document.getElementById(&amp;#39;id1&amp;#39;).style.color = &amp;#39;red&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            Attention! Que va-t-il se passer?&lt;span class="nt"&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Ou encore lorsque la souris survole un élément avec l'attribut &lt;code&gt;onmouseover&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;onmouseover=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mOver(this)&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;onmouseout=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;mOut(this)&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;style=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;background-color:#D5AA12;font-size: 13rem;width:19rem;padding:40px;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+            Sol&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+        &lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+            &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;mOver&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Fa&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;background&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#FF5546&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+
+            &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;mOut&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Sol&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="nx"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;background&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#D5AA12&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+    &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="pour-aller-plus-loin"&gt;Pour aller plus loin&lt;/h1&gt;
+&lt;p&gt;Lorsqu'on modifie une page html grâce à javascript, on manipule le &lt;code&gt;DOM&lt;/code&gt;: Document Object Model. Pour plus de précisions et d'autres exemples interactifs voir l'excellent site en anglais  &lt;a href="http://www.w3schools.com/js/js_htmldom.asp"&gt;w3schools&lt;/a&gt;&lt;/p&gt;</summary><category term="icn"></category><category term="html5"></category><category term="javascript"></category></entry><entry><title>Ajouter du style avec css</title><link href="http://benjaminabel.github.io/icn/html/ajouter-du-style-avec-css/" rel="alternate"></link><updated>2015-10-09T00:00:00+02:00</updated><author><name>Benjamin Abel</name></author><id>tag:benjaminabel.github.io,2014-11-04:icn/html/ajouter-du-style-avec-css/</id><summary type="html">&lt;p&gt;&lt;a title="Par W3C (http://www.w3.org/html/logo/) [CC-BY-3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AClass-header-css3.jpg"&gt;&lt;img width="256" alt="Class-header-css3" src="//upload.wikimedia.org/wikipedia/commons/5/52/Class-header-css3.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000. &lt;a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"&gt;Source Wikipedia&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
