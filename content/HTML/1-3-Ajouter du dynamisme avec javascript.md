@@ -1,5 +1,6 @@
 Title:  Ajouter du dynamisme avec javascript
 date: 2014-11-04
+modified: 2015-11-19
 Chapitre: 1
 series:  Créer des pages web en html5
 series_index: 3
@@ -46,7 +47,7 @@ Le code javascript peut être intégré directement grâce à la balise html `<s
   <head>
     <meta charset="utf-8" />
     <title>Un document minuscule</title>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>Titre principal de mon document</h1>
@@ -55,21 +56,22 @@ Le code javascript peut être intégré directement grâce à la balise html `<s
 </html>
 ```
 
-##Tester du code javascript grâce à l'ardoise
+## Tester et debugger le code javascript
+### Console du navigateur
+Lorsqu'on désire débugguer un programme javascript, la solution la plus simple est d'utiliser la fonction `console.log()`, pour afficher des variables dans la **console** du navigateur non affichée par défaut, mais accessible par le raccourci <kbd>CTRL+MAJ+K</kbd> sur Firefox. *(Sinon, vous pouvez aussi y accéder par le menu de `Développement web`.)*
 
-La plupart de navigateurs dispose d'une console pour tester le code javascript. Dans le cas de firefox, on la lance avec le raccourci <kbd>MAJ+F4</kbd>. Sinon, vous pouvez y accéder par le menu de `Développement web`.
-
-Il est aussi très utile d'ouvrir également la console <kbd>CTRL+MAJ+K</kbd> web pour pouvoir afficher des résultats dans celle-ci grâce à la fonction `console.log()`.
+### Ardoise javascript
+La plupart de navigateurs dispose d'une console pour entrer du code javascript afin de réaliser des tests. Dans le cas de firefox, on la lance avec le raccourci <kbd>MAJ+F4</kbd>.
 
 L'éxecution du code javascript s'effectue en appuyant sur le bouton `Exécuter` (ou le raccourci clavier <kbd>CTRL+R</kbd>)
 
-#Syntaxe du javascript
+# Syntaxe du javascript
 
 Il s'agit d'un langage très complet, qui ne peut pas être expliqué en quelques lignes, pour une référence plus complète, voir l'article Wikipedia [Syntaxe javascript](http://fr.wikipedia.org/wiki/Syntaxe_JavaScript)
 
 - Les **commentaires** sont notés précédés de deux barres obliques: `//`.
 - Les instructions simples sont terminées par un **point-virgule**: `;`.
-- L'**indentation** des blocs d'instruction n'est pas obligatoire comme en python, mais souhaitable.
+- L'**indentation** des blocs d'instruction n'est pas obligatoire, mais souhaitable.
 - Les blocs d'instructions sont entourés d'accolades.
 ```
 if (expression1)
@@ -82,7 +84,7 @@ if (expression1)
  }
 ```
 
-#Variables javascript
+# Variables javascript
 
 Les variables n'ont pas de type défini, on parle de typage dynamique comme en python. Il est possible de modifier le type de donnée contenue dans une variable.
 
@@ -122,7 +124,7 @@ const a = 5;
 a = 4;  // Exception: redeclaration of const a
 ```
 
-#Fonctions javascript
+# Fonctions javascript
 
 Une fonction est déclarée de la façon suivante en javascript:
 
@@ -161,24 +163,24 @@ n * 2; // Exception: n is not defined
 
 ```
 
-#Modifier le code html grâce à javascript
-##Execution différée
+# Modifier dynamiquement une page html grâce à javascript
+## Execution différée
 Il convient d'attendre que la page html soit chargée avant d'éxecuter le code javascript. De nombreux développeurs placent le code javascript à la fin du corps du document avant la balise fermante `</body>`.
 
 Cependant il est aussi possible de lancer le code javascript qu'après le chargement de la fenêtre en placant le code dans une fonction anonyme s'executant après le chargement de la page.*(Vous allez voir, en javascript, les fonctions sont très présentes)*
 
 ```
-window.onload = function() { 
+window.onload = function() {
   // code javascript à éxecuter
   // après le chargement de la page
 }
 ```
 
-##Accéder à un élément html
+## Accéder à un élément html
 
 La méthode `document.getElementById()` permet de sélectionner un élément html à partir de son `id`.
 
-On peut alors modifier son contenu grâce à la propriété `innerHTML`, 
+On peut alors modifier son contenu grâce à la propriété `innerHTML`,
 
 ```
 document.getElementById("this-id").innerHTML = "New text!";
@@ -202,7 +204,7 @@ document.getElementById("this-id").style.color = "##FFAA85";
         <title>Un peu de javascript</title>
         <script type="text/javascript" charset="utf-8">
             window.onload = function() {
-                    // Stocke l'heure dans la vaariable d
+                    // Stocke l'heure dans la variable d
                     var d = new Date();
                     // Ajoute cette heure dans l'élément html ayant pour id heure
                     document.getElementById("heure").innerHTML = d.toLocaleTimeString();
@@ -223,7 +225,7 @@ document.getElementById("this-id").style.color = "##FFAA85";
 *Encore mieux afficher l'heure actuelle en éxecutant l'affichage toutes les mille millisecondes*
 
 ```
-!doctype html>
+<!doctype html>
 <html lang="fr">
 
     <head>
@@ -237,7 +239,7 @@ document.getElementById("this-id").style.color = "##FFAA85";
                     document.getElementById("heure").innerHTML = d.toLocaleTimeString();
 
                 }
-          
+
                 setInterval(function() {
                         myTimer()
                     }, 1000);
@@ -254,9 +256,10 @@ document.getElementById("this-id").style.color = "##FFAA85";
 </html>
 ```
 
-##Contrôler des événements
+## Contrôler des événements
 
-On éxecuter du javascript lorsqu'on **presse un bouton** avec  l'attribut `onclick` 
+- On peut éxecuter du javascript lorsqu'on **presse un bouton** avec  l'attribut `onclick`
+
 
 ```
 <!DOCTYPE html>
@@ -272,7 +275,8 @@ On éxecuter du javascript lorsqu'on **presse un bouton** avec  l'attribut `oncl
 </html>
 ```
 
-Ou encore lorsque la souris survole un élément avec l'attribut `onmouseover`.
+- Ou encore lorsque la souris survole un élément avec l'attribut `onmouseover`.
+
 
 ```
 <!DOCTYPE html>
@@ -301,9 +305,6 @@ Ou encore lorsque la souris survole un élément avec l'attribut `onmouseover`.
 
 ```
 
-##Pour aller plus loin
+# Pour aller plus loin
 
-Lorsqu'on modifie une page html grâce à javascript, on manipule le `DOM`: Document Object Model. Pour plus de précisions et d'autres exemples interactifs voir l'excellent site [w3schools](http://www.w3schools.com/js/js_htmldom.asp)
-
-
-
+Lorsqu'on modifie une page html grâce à javascript, on manipule le `DOM`: Document Object Model. Pour plus de précisions et d'autres exemples interactifs voir l'excellent site en anglais  [w3schools](http://www.w3schools.com/js/js_htmldom.asp)
