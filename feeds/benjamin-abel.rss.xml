@@ -181,7 +181,7 @@ a = 4;  // Exception: redeclaration of const a
         &lt;span class="nt"&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Un peu de javascript&lt;span class="nt"&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
         &lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;charset=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
             window.onload = function() {
-                    // Stocke l&amp;#39;heure dans la vaariable d
+                    // Stocke l&amp;#39;heure dans la variable d
                     var d = new Date();
                     // Ajoute cette heure dans l&amp;#39;élément html ayant pour id heure
                     document.getElementById(&amp;quot;heure&amp;quot;).innerHTML = d.toLocaleTimeString();
@@ -201,7 +201,7 @@ a = 4;  // Exception: redeclaration of const a
 
 
 &lt;p&gt;&lt;em&gt;Encore mieux afficher l'heure actuelle en éxecutant l'affichage toutes les mille millisecondes&lt;/em&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;!doctype html&amp;gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;html&lt;/span&gt; &lt;span class="na"&gt;lang=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fr&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
 
     &lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
