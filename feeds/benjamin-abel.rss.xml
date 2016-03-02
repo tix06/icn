@@ -5,7 +5,7 @@
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="R&amp;#233;cup&amp;#233;rer-une-entr&amp;#233;e-de-l'utilisateur"&gt;R&amp;#233;cup&amp;#233;rer une entr&amp;#233;e de l'utilisateur&lt;a class="anchor-link" href="#R&amp;#233;cup&amp;#233;rer-une-entr&amp;#233;e-de-l'utilisateur"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;On utilise la fonction &lt;code&gt;input()&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="R&amp;#233;cup&amp;#233;rer-une-entr&amp;#233;e-de-l'utilisateur"&gt;R&amp;#233;cup&amp;#233;rer une entr&amp;#233;e de l'utilisateur&lt;a class="anchor-link" href="#R&amp;#233;cup&amp;#233;rer-une-entr&amp;#233;e-de-l'utilisateur"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;On utilise la fonction &lt;code&gt;input()&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;reponse = input('Entrer votre réponse')&lt;/p&gt;
 &lt;p&gt;Si l'utilisateur entre Oui, la variable reponse contient alors la chaîne de caractère &lt;code&gt;'Oui'&lt;/code&gt;.&lt;/p&gt;
 
@@ -47,7 +47,7 @@ Oui
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Tester-une-cha&amp;#238;ne-de-caract&amp;#232;res"&gt;Tester une cha&amp;#238;ne de caract&amp;#232;res&lt;a class="anchor-link" href="#Tester-une-cha&amp;#238;ne-de-caract&amp;#232;res"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;On réalise des tests de conditions sous la forme:&lt;/p&gt;
+&lt;h1 id="Tester-une-cha&amp;#238;ne-de-caract&amp;#232;res"&gt;Tester une cha&amp;#238;ne de caract&amp;#232;res&lt;a class="anchor-link" href="#Tester-une-cha&amp;#238;ne-de-caract&amp;#232;res"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;On réalise des tests de conditions sous la forme:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;if &amp;lt;test&amp;gt;:
     code éxecuté si le test réussi
@@ -138,7 +138,7 @@ else:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Manipuler-les-donn&amp;#233;es"&gt;Manipuler les donn&amp;#233;es&lt;a class="anchor-link" href="#Manipuler-les-donn&amp;#233;es"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;En python peut modifier une chaîne de caractère(&lt;em&gt;string&lt;/em&gt; en anglais) grâce à des fonctions du type:&lt;/p&gt;
+&lt;h1 id="Manipuler-les-donn&amp;#233;es"&gt;Manipuler les donn&amp;#233;es&lt;a class="anchor-link" href="#Manipuler-les-donn&amp;#233;es"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;En python peut modifier une chaîne de caractère(&lt;em&gt;string&lt;/em&gt; en anglais) grâce à des fonctions du type:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;str.lower()&lt;/code&gt;: conversion en minuscules&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;str.upper()&lt;/code&gt;: conversion en majuscules&lt;/li&gt;
@@ -305,7 +305,7 @@ else:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Cr&amp;#233;er-un-compteur"&gt;Cr&amp;#233;er un compteur&lt;a class="anchor-link" href="#Cr&amp;#233;er-un-compteur"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Pour cela il suffir de créer une variable qui augmente de 1 à chaque réussite.&lt;/p&gt;
+&lt;h1 id="Cr&amp;#233;er-un-compteur"&gt;Cr&amp;#233;er un compteur&lt;a class="anchor-link" href="#Cr&amp;#233;er-un-compteur"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Pour cela il suffir de créer une variable qui augmente de 1 à chaque réussite.&lt;/p&gt;
 &lt;p&gt;On commence par initialiser la variable:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;compteur = 0
@@ -366,7 +366,7 @@ Votre score est de:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="En-plus:-Ajouter-des-images"&gt;En plus: Ajouter des images&lt;a class="anchor-link" href="#En-plus:-Ajouter-des-images"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Il est possible d'ajouter des images dans un notebook Ipython, en utilisant le module &lt;code&gt;IPython.display.Image&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id="En-plus:-Ajouter-des-images"&gt;En plus: Ajouter des images&lt;a class="anchor-link" href="#En-plus:-Ajouter-des-images"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Il est possible d'ajouter des images dans un notebook Ipython, en utilisant le module &lt;code&gt;IPython.display.Image&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Commencer par importer le module, il est nécessaire de l'importer une seule fois, et généralement on place tous les imports en haut du fichier.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;from IPython.display import Image
