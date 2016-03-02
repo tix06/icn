@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <title>
+Entrées utilisateurs et traitement des données en python
+  </title>
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/tipuedrop/tipuedrop.css">
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/highlight-ipynb.css" />
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/pygments.css" />
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/style.css" />
+
+  <!-- Favicons from realfavicongenerator.net -->
+  <link rel="apple-touch-icon-precomposed" href="http://benjaminabel.github.io/icn//favicon-152.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="http://benjaminabel.github.io/icn//apple-touch-icon-57x57.png?v=1">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://benjaminabel.github.io/icn//apple-touch-icon-60x60.png?v=1">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://benjaminabel.github.io/icn//apple-touch-icon-72x72.png?v=1">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://benjaminabel.github.io/icn//apple-touch-icon-76x76.png?v=1">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://benjaminabel.github.io/icn//apple-touch-icon-114x114.png?v=1">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://benjaminabel.github.io/icn//apple-touch-icon-120x120.png?v=1">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://benjaminabel.github.io/icn//apple-touch-icon-144x144.png?v=1">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://benjaminabel.github.io/icn//apple-touch-icon-152x152.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://benjaminabel.github.io/icn//apple-touch-icon-180x180.png?v=1">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-32x32.png?v=1" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-194x194.png?v=1" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-96x96.png?v=1" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//android-chrome-192x192.png?v=1" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-16x16.png?v=1" sizes="16x16">
+  <link rel="manifest" href="http://benjaminabel.github.io/icn//manifest.json?v=1">
+  <link rel="shortcut icon" href="http://benjaminabel.github.io/icn//favicon.ico?v=1">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="http://benjaminabel.github.io/icn//mstile-144x144.png?v=1">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="http://benjaminabel.github.io/icn">
+                        ICN
+                    </a>
+        </h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon">
+        <a href="#">
+          <span>Menu</span>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li>
+          <a href="https://github.com/benjaminabel/icn" class="active">
+                        Github
+                    </a>
+        </li>
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="small-12 columns">
+              <input type="text" name="q" id="tipue_drop_input" autocomplete="off" required placeholder="Rechercher">
+            </div>
+            <div id="tipue_drop_content"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>  <!-- End Nav -->
+
+  <!-- Main Blog Content -->
+  <div class="row " id="main-content">
+<article>
+  <header>
+
+    <div class="row">
+      <div id="article-title" class="large-8 columns">
+        <h2>
+          <a href="http://benjaminabel.github.io/icn/python/entrees-utilisateurs-et-traitement-des-donnees-en-python/" rel="bookmark" title="Permalink to Entrées utilisateurs et traitement des données en python">
+                        Entrées utilisateurs et traitement des données en python
+                    </a>
+        </h2>
+      </div>
+      <div id="toc" class="large-4 columns">
+      </div>
+    </div>
+  </header>
+<h6 class="subheader" title="2016-03-02T00:00:00+01:00">
+    publié le
+    mer. 02 mars 2016
+
+    
+</h6>
+ <p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="R&#233;cup&#233;rer-une-entr&#233;e-de-l'utilisateur">R&#233;cup&#233;rer une entr&#233;e de l'utilisateur<a class="anchor-link" href="#R&#233;cup&#233;rer-une-entr&#233;e-de-l'utilisateur">&#182;</a></h2><p>On utilise la fonction <code>input()</code></p>
+<p>reponse = input('Entrer votre réponse')</p>
+<p>Si l'utilisateur entre Oui, la variable reponse contient alors la chaîne de caractère <code>'Oui'</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Application</span>
+<span class="n">reponse</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&#39;Entrer votre réponse: &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">reponse</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Entrer votre réponse: Oui
+Oui
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tester-une-cha&#238;ne-de-caract&#232;res">Tester une cha&#238;ne de caract&#232;res<a class="anchor-link" href="#Tester-une-cha&#238;ne-de-caract&#232;res">&#182;</a></h2><p>On réalise des tests de conditions sous la forme:</p>
+
+<pre><code>if &lt;test&gt;:
+    code éxecuté si le test réussi
+else:
+    code exécuté si le test raté
+
+</code></pre>
+<p>avec éventuellement d'autres cas en utilisant la clause <code>elif</code>(elseif) qui permet de réaliser un ou des tests suplémentaires.</p>
+
+<pre><code>if &lt;test1&gt;:
+    code éxecuté si le test1 réussi
+elif &lt;test2&gt;:
+    code éxecuté si le test2 réussi
+else:
+    code exécuté si tous les tests ratent</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Application if</span>
+
+<span class="k">if</span> <span class="n">reponse</span> <span class="o">==</span> <span class="s">&#39;Oui&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&#39;Vous êtes le champion&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;C&#39;est râté&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Vous êtes le champion
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Application avec elif</span>
+
+<span class="k">if</span> <span class="n">reponse</span> <span class="o">==</span> <span class="s">&#39;Non&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&#39;Ne soyez pas aussi Défaitiste&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">reponse</span> <span class="o">==</span> <span class="s">&#39;Oui&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Bravo quel positivisme.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;C&#39;est râté&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Bravo quel positivisme.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Manipuler-les-donn&#233;es">Manipuler les donn&#233;es<a class="anchor-link" href="#Manipuler-les-donn&#233;es">&#182;</a></h2><p>En python peut modifier une chaîne de caractère(<em>string</em> en anglais) grâce à des fonctions du type:</p>
+<ul>
+<li><code>str.lower()</code>: conversion en minuscules</li>
+<li><code>str.upper()</code>: conversion en majuscules</li>
+</ul>
+<p>Ou même <strong>si possible</strong> les convertir en nombre:</p>
+<ul>
+<li><code>int()</code> : conversion en entier</li>
+<li><code>float()</code> : conversion en nombre à virgule(nombre flottant)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="s">&#39;Oui&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&apos;oui&apos;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">(</span><span class="s">&#39;Oui&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&apos;OUI&apos;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">int</span><span class="p">(</span><span class="s">&#39;Oui&#39;</span><span class="p">)</span> <span class="c"># renvoie une erreur car conversion impossible</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">ValueError</span>                                Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-18-bf1dc980d1fa&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>int<span class="ansiyellow">(</span><span class="ansiblue">&apos;Oui&apos;</span><span class="ansiyellow">)</span> <span class="ansired"># renvoie une erreur car conversion impossible</span><span class="ansiyellow"></span>
+
+<span class="ansired">ValueError</span>: invalid literal for int() with base 10: &apos;Oui&apos;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">int</span><span class="p">(</span><span class="s">&#39;13&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>13</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">float</span><span class="p">(</span><span class="s">&#39;13&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>13.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Cr&#233;er-un-compteur">Cr&#233;er un compteur<a class="anchor-link" href="#Cr&#233;er-un-compteur">&#182;</a></h2><p>Pour cela il suffir de créer une variable qui augmente de 1 à chaque réussite.</p>
+<p>On commence par initialiser la variable:</p>
+
+<pre><code>compteur = 0
+
+</code></pre>
+<p>Puis si l'utilisateur donne une bonne réponse, on augmente de 1 sa valeur:</p>
+
+<pre><code>if &lt;test de bonne réponse&gt;:
+    compteur = compteur + 1</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Application</span>
+<span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">input</span><span class="p">(</span><span class="s">&#39;Votre réponse? &#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">reponse</span> <span class="o">==</span> <span class="s">&#39;Oui&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;C&#39;est correct, Bravo.&quot;</span><span class="p">)</span>
+    <span class="n">compteur</span> <span class="o">=</span> <span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;C&#39;est râté&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Votre score est de:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">compteur</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Votre réponse? Oui
+C&apos;est correct, Bravo.
+Votre score est de:
+1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="En-plus:-Ajouter-des-images">En plus: Ajouter des images<a class="anchor-link" href="#En-plus:-Ajouter-des-images">&#182;</a></h2><p>Il est possible d'ajouter des images dans un notebook Ipython, en utilisant le module <code>IPython.display.Image</code>.</p>
+<p>Commencer par importer le module, il est nécessaire de l'importer une seule fois, et généralement on place tous les imports en haut du fichier.</p>
+
+<pre><code>from IPython.display import Image
+
+</code></pre>
+<p>Ensuite vous pouvez afficher une image en précisant son chemin <em>relatif</em> par rapport au notebook dans lequel l'image doit être affichée.</p>
+
+<pre><code>Image("&lt;chemin vers l'image")</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># Application</span>
+<span class="c"># J&#39;ai placé mes images dans un répertoire img</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s">&#39;img/image-000.jpg&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
+
+
+<div class="output_jpeg output_subarea output_execute_result">
+<img src="data:image/jpeg;base64,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
+7gtKzUPyfV/Ut+4LSgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAi
+IgIiIJtjB4+zO6wYOysHrNA4xP8Ai5pBPxXL8H5Ov/u2YdIwD5FyBsn7W8J+3arogktlzsfyqlCf
+zZO+M/YWn71mv2MvZx9qt+BfalhewEWmEbII79K+iDhVjMNSGJ3VkbWn3gaXdEQEREBERAREQERE
+BERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARE
+QEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBE
+RAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBEWW5eqY
++ITXLMcEZeGB8jg0cR6DZ8UGpFPZnMTL/R5Ok4+Anb/8rXFNFM3ccjHj6LgUHVERAREQEREBERAR
+EQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQFlt1Ib1WStOziikGnDp8Qe4j
+xWpEEGmWts/grKxsmsNBdBNIwH1mMd/6Y7x8e9bH4DDv+Vi6R8+wbv7l6yOPjyNYxucY5GOD4pmf
+KicOjh/7zHJc8VefOJKlqNsV6voTRj5JHc9u/mnXLw6dyDz/ACbxTecdZ0X6qV7P3SEOBhH9HdyM
+XuuSO/eJVZRYsndvMdNjaLJK3zJp5zGJfNoDXHh8CdfYg6jEWWf0ebyA/S7J33sX56jl2fIzTXfr
+ajT+6Wrrj8kLrpIZYX17cJHawvIJG+hBHItOuR/iuWbfK+KrUimdD63YETpWO05jeFzjo9xIboHz
+Qcu1yzZ+wZkcTLKP6sxOY77A8/cuwmzzR7VLHSfo2nt++MocBiDV9X/B9cR75aYA4HxB68Xnva/M
+HNNJUlrzyOmkqTvgMrurwOYJ89Eb80AX8s3+kwjj+ptMd+9wocxOz+kwuRb7mxv/AHXlVkQS4s5W
+knihkitwSSv4GdtWe0F2idcWtdAe9F5yG5M3iYfzXyzH3NjLPvkRBWREQEREBERAREQEREBERARE
+QEREBERAREQEREBERAREQEREBERAREQFLylGSfsrVWQR36+zC8/JeD1Y76J/Z17lURBGbZ/DWDts
+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
+EREBERAREQEREBERAREQEREBERAREQEREH//2Q==
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></p> <p class="subheader">Catégorie: <a href="http://benjaminabel.github.io/icn/category/python.html">python</a>
+
+    Mots-clés:
+    <a href="http://benjaminabel.github.io/icn/tag/icn.html">icn </a>
+    <a href="http://benjaminabel.github.io/icn/tag/python.html">python </a>
+</p>
+
+
+ </article>
+
+
+  </div>
+  <!-- End Main Content -->
+  <!-- Footer -->
+<div class="footer">
+  <div class="row">
+    <div class="large-3 columns">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Licence Creative Commons" src="http://benjaminabel.github.io/icn/theme/images/by-sa.svg" />
+      </a>
+    </div>
+    <div class="large-9 columns">
+      «Entrées utilisateurs et traitement des données en python» par Benjamin Abel est mis à disposition selon les termes de la
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.
+    </div>
+  </div>
+</div>  <!-- End footer -->
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/jquery/dist/jquery.js"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/foundation/js/foundation.js"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/tipuedrop/tipuedrop.js"></script>
+  <script>
+    $(document).foundation();
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+  </script>
+  <!-- Search bar -->
+  <script>
+    $(document).ready(function() {
+      $('#tipue_drop_input').tipuedrop({
+        'mode': 'json',
+        'contentLocation': 'http://benjaminabel.github.io/icn/tipuesearch_content.json'
+      });
+    });
+  </script>
+  <!-- End Search bar -->
+
+  <!-- Google analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-50631847-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google analytics -->
+  <script src="http://benjaminabel.github.io/icn/theme/js/mine.js"></script>
+</body>
