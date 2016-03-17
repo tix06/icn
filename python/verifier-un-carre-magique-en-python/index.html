@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+  <title>
+Vérifier un carré magique en python
+  </title>
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/tipuedrop/tipuedrop.css">
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/highlight-ipynb.css" />
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/pygments.css" />
+  <link rel="stylesheet" href="http://benjaminabel.github.io/icn/theme/css/style.css" />
+
+  <!-- Favicons from realfavicongenerator.net -->
+  <link rel="apple-touch-icon-precomposed" href="http://benjaminabel.github.io/icn//favicon-152.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="http://benjaminabel.github.io/icn//apple-touch-icon-57x57.png?v=1">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://benjaminabel.github.io/icn//apple-touch-icon-60x60.png?v=1">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://benjaminabel.github.io/icn//apple-touch-icon-72x72.png?v=1">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://benjaminabel.github.io/icn//apple-touch-icon-76x76.png?v=1">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://benjaminabel.github.io/icn//apple-touch-icon-114x114.png?v=1">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://benjaminabel.github.io/icn//apple-touch-icon-120x120.png?v=1">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://benjaminabel.github.io/icn//apple-touch-icon-144x144.png?v=1">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://benjaminabel.github.io/icn//apple-touch-icon-152x152.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://benjaminabel.github.io/icn//apple-touch-icon-180x180.png?v=1">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-32x32.png?v=1" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-194x194.png?v=1" sizes="194x194">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-96x96.png?v=1" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//android-chrome-192x192.png?v=1" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://benjaminabel.github.io/icn//favicon-16x16.png?v=1" sizes="16x16">
+  <link rel="manifest" href="http://benjaminabel.github.io/icn//manifest.json?v=1">
+  <link rel="shortcut icon" href="http://benjaminabel.github.io/icn//favicon.ico?v=1">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="http://benjaminabel.github.io/icn//mstile-144x144.png?v=1">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+<div class="contain-to-grid">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="http://benjaminabel.github.io/icn">
+                        ICN
+                    </a>
+        </h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon">
+        <a href="#">
+          <span>Menu</span>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li>
+          <a href="https://github.com/benjaminabel/icn" class="active">
+                        Github
+                    </a>
+        </li>
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="small-12 columns">
+              <input type="text" name="q" id="tipue_drop_input" autocomplete="off" required placeholder="Rechercher">
+            </div>
+            <div id="tipue_drop_content"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</div>  <!-- End Nav -->
+
+  <!-- Main Blog Content -->
+  <div class="row " id="main-content">
+<article>
+  <header>
+
+    <div class="row">
+      <div id="article-title" class="large-8 columns">
+        <h2>
+          <a href="http://benjaminabel.github.io/icn/python/verifier-un-carre-magique-en-python/" rel="bookmark" title="Permalink to Vérifier un carré magique en python">
+                        Vérifier un carré magique en python
+                    </a>
+        </h2>
+      </div>
+      <div id="toc" class="large-4 columns">
+      </div>
+    </div>
+  </header>
+<h6 class="subheader" title="2016-03-17T00:00:00+01:00">
+    publié le
+    jeu. 17 mars 2016
+
+    
+</h6>
+ <p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>En mathématiques, un carré magique d’ordre n est composé de n2 entiers strictement positifs, écrits sous la forme d’un tableau carré. Ces nombres sont disposés de sorte que leurs sommes sur chaque rangée, sur chaque colonne et sur chaque diagonale principale soient égales. On nomme alors constante magique (et parfois densité) la valeur de ces sommes.
+<a href="https://fr.wikipedia.org/wiki/Carré_magique_(mathématiques">Source: Wikipedia</a>)</p>
+</blockquote>
+<p><a title="By User:Phidauex (Own work) [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AMagicsquareexample.svg"><img width="256" alt="Magicsquareexample" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Magicsquareexample.svg/128px-Magicsquareexample.svg.png"/></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Stocker-les-valeurs">Stocker les valeurs<a class="anchor-link" href="#Stocker-les-valeurs">&#182;</a></h1><p>On choisit de stocker les valeurs des lignes sous forme de listes:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">l1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">l2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">l3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Calculer-les-sommes-d'une-ligne">Calculer les sommes d'une ligne<a class="anchor-link" href="#Calculer-les-sommes-d'une-ligne">&#182;</a></h1><p>On peut caluler la somme d'une ligne en additionnant chacune des valeurs de la ligne:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">s1</span> <span class="o">=</span> <span class="n">l1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">l1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span><span class="n">l1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Utiliser-une-boucle-for">Utiliser une boucle for<a class="anchor-link" href="#Utiliser-une-boucle-for">&#182;</a></h2><p>Mais il est plus intéressant d'utiliser un boucle <code>for</code> pour ça:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># On initialise la variable somme s1</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">l1</span><span class="p">:</span>
+    <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">valeur</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Utiliser-une-fonction">Utiliser une fonction<a class="anchor-link" href="#Utiliser-une-fonction">&#182;</a></h2><p>Ou encore mieux, une fonction qui accepte comme argument la liste contenant les valeurs de la ligne et qui renvoie la somme:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c"># définition de la fonction somme_ligne</span>
+<span class="k">def</span> <span class="nf">somme_ligne</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
+    <span class="n">somme</span> <span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">liste</span><span class="p">:</span>
+        <span class="n">somme</span> <span class="o">=</span> <span class="n">somme</span> <span class="o">+</span> <span class="n">valeur</span>
+    <span class="k">return</span> <span class="n">somme</span>
+
+<span class="c"># Appel de la fonction avec la ligne l1</span>
+
+<span class="n">s1</span> <span class="o">=</span> <span class="n">somme_ligne</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="A-vous">A vous<a class="anchor-link" href="#A-vous">&#182;</a></h2><p>Vérifier que les trois lignes ont bien une somme égale grâce à une structure conditionnelle <code>if</code> et afficher le message de réussite ou d'échec à l'utilisateur.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Calculer-les-sommes-d'une-colonne">Calculer les sommes d'une colonne<a class="anchor-link" href="#Calculer-les-sommes-d'une-colonne">&#182;</a></h1><p>On peut caluler la somme d'une colonne en additionnant chacune des valeurs de chaque ligne:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">c1</span> <span class="o">=</span> <span class="n">l1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">l2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span><span class="n">l3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="A-vous">A vous<a class="anchor-link" href="#A-vous">&#182;</a></h2><p>Trouver un moyen d'utiliser une boucle pour calculer la somme des colonnes, on pourra s'aider de l'exemple de code ci-dessous pour lancer la boucle.</p>
+<p>Une fois le calcul effectuer <em>comparer</em> les valeurs et <strong>afficher un message</strong> à l'utilisateur en cas de réussite ou non.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">l1</span><span class="p">,</span> <span class="n">l2</span><span class="p">,</span> <span class="n">l3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[2, 7, 6]
+[9, 5, 1]
+[4, 3, 8]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Calculer-les-sommes-d'une-diagonale">Calculer les sommes d'une diagonale<a class="anchor-link" href="#Calculer-les-sommes-d'une-diagonale">&#182;</a></h1><h2 id="A-vous">A vous<a class="anchor-link" href="#A-vous">&#182;</a></h2><p>Calculer la somme d'une diagonale, puis de l'autre et stocker ces valeurs dans les variables <code>d1</code> et <code>d2</code>.</p>
+<p>Une fois le calcul effectué <em>comparer</em> les valeurs et <strong>afficher un message</strong> à l'utilisateur en cas de réussite ou non.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Finaliser-le-programme">Finaliser le programme<a class="anchor-link" href="#Finaliser-le-programme">&#182;</a></h1><p>Réaliser un programme qui à partir de trois listes l1, l2, et l3 effectue toutes les comparaisons et affiche un message à l'utilisateur pour indiquer si <strong>le carré est magique ou non</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Pour-aller-plus-loin">Pour aller plus loin<a class="anchor-link" href="#Pour-aller-plus-loin">&#182;</a></h1><ul>
+<li>Demander à l'utilisateur d'entrer ces données en utilisant la fonction <code>input()</code> en convertissant ces valeurs en liste.</li>
+<li>Utiliser 3 fonctions pour vérifier les sommes des lignes, colonnes et diagonales.</li>
+<li>Stocker le tableau non dans trois listes de 3 éléments, mais dans une seule de 9 en <em>concaténant</em> les trois listes, puis réaliser le traitement des données sur ce tableau. Expliquer en quoi ce stockage est plus <em>pratique</em>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">tableau</span> <span class="o">=</span> <span class="n">l1</span> <span class="o">+</span> <span class="n">l2</span> <span class="o">+</span> <span class="n">l3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tableau</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[2, 7, 6, 9, 5, 1, 4, 3, 8]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Trouver un moyen de vérifier un tableau plus grand comme celui ci-dessous.</li>
+</ul>
+<p><a title="By Cantons-de-l&#039;Est (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AMagic_Squares_-_Multiplication_-_3.svg"><img width="256" alt="Magic Squares - Multiplication - 3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Magic_Squares_-_Multiplication_-_3.svg/256px-Magic_Squares_-_Multiplication_-_3.svg.png"/></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour vous aider voici la liste de départ:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">carré144</span> <span class="o">=</span> <span class="p">[</span><span class="mi">31</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">126</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">122</span><span class="p">,</span> <span class="mi">124</span><span class="p">,</span> <span class="mi">125</span><span class="p">,</span> <span class="mi">118</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">131</span><span class="p">,</span> <span class="mi">133</span><span class="p">,</span> <span class="mi">134</span><span class="p">,</span> <span class="mi">127</span><span class="p">,</span> <span class="mi">132</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">77</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">73</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">62</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">104</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">94</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">97</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">83</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">82</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">139</span><span class="p">,</span> <span class="mi">144</span><span class="p">,</span> <span class="mi">137</span><span class="p">,</span> <span class="mi">138</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">142</span><span class="p">,</span> <span class="mi">143</span><span class="p">,</span> <span class="mi">136</span><span class="p">,</span> <span class="mi">141</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">112</span><span class="p">,</span> <span class="mi">117</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">113</span><span class="p">,</span> <span class="mi">115</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">114</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></p> <p class="subheader">Catégorie: <a href="http://benjaminabel.github.io/icn/category/python.html">python</a>
+
+    Mots-clés:
+    <a href="http://benjaminabel.github.io/icn/tag/icn.html">icn </a>
+    <a href="http://benjaminabel.github.io/icn/tag/python.html">python </a>
+    <a href="http://benjaminabel.github.io/icn/tag/listes.html">listes </a>
+    <a href="http://benjaminabel.github.io/icn/tag/boucles.html">boucles </a>
+</p>
+
+
+ </article>
+
+
+  </div>
+  <!-- End Main Content -->
+  <!-- Footer -->
+<div class="footer">
+  <div class="row">
+    <div class="large-3 columns">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Licence Creative Commons" src="http://benjaminabel.github.io/icn/theme/images/by-sa.svg" />
+      </a>
+    </div>
+    <div class="large-9 columns">
+      «Vérifier un carré magique en python» par Benjamin Abel est mis à disposition selon les termes de la
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.
+    </div>
+  </div>
+</div>  <!-- End footer -->
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/jquery/dist/jquery.js"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/bower_components/foundation/js/foundation.js"></script>
+  <script src="http://benjaminabel.github.io/icn/theme/tipuedrop/tipuedrop.js"></script>
+  <script>
+    $(document).foundation();
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+  </script>
+  <!-- Search bar -->
+  <script>
+    $(document).ready(function() {
+      $('#tipue_drop_input').tipuedrop({
+        'mode': 'json',
+        'contentLocation': 'http://benjaminabel.github.io/icn/tipuesearch_content.json'
+      });
+    });
+  </script>
+  <!-- End Search bar -->
+
+  <!-- Google analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-50631847-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google analytics -->
+  <script src="http://benjaminabel.github.io/icn/theme/js/mine.js"></script>
+</body>
